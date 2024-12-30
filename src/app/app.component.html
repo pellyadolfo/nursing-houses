@@ -1,0 +1,69 @@
+<style>
+  .main {
+		position:relative;
+		overflow:hidden;
+  }
+
+	.map {
+		flex: 60%;
+	}
+
+	.content {
+		flex: 40%;
+    height: 100%;
+	}
+
+  .list {
+    background: light-dark(var(--p-surface-50), var(--p-surface-900));
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 100%;
+  }
+</style>
+
+<main class="main">
+
+	<p-menubar [model]="menuItems"></p-menubar>
+  
+	<p-splitter [panelSizes]="[20, 80]" [minSizes]="[20, 40]" class="content" [style]="{ 'height': '100%' }" > 
+		<ng-template pTemplate> 
+
+			<p-listbox [options]="countries" [(ngModel)]="selectedCountries" [metaKeySelection]="false" [filter]="true" [multiple]="true" optionLabel="name" [listStyle]="{'max-height':'100%'}" [style]="{'width':'100%'}">
+				<ng-template let-country pTemplate="item">
+
+					<span class="title">Residencias</span>
+		
+					<p-listbox [options]="countries" [(ngModel)]="selectedCountries" [metaKeySelection]="false" [filter]="true" [multiple]="true" optionLabel="name" [listStyle]="{'max-height':'100%'}" [style]="{'width':'100%'}">
+						<ng-template let-country pTemplate="item">
+							<div class="country-item">
+								<div>{{country.name}}</div>
+							</div>
+						</ng-template>
+					</p-listbox>
+					
+				</ng-template>
+			</p-listbox>
+
+		</ng-template> 
+
+		<ng-template pTemplate>
+			<div class="map">
+				<app-angular-google-maps></app-angular-google-maps>
+			</div>
+		</ng-template>
+
+	</p-splitter>
+
+</main>
+
+<router-outlet />

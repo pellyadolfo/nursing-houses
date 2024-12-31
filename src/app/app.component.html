@@ -2,6 +2,12 @@
   .main {
 		position:relative;
 		overflow:hidden;
+
+    height: 100vh;
+    display: flex;
+
+    /* Direction of the items, can be row or column */
+    flex-direction: column;
   }
 
 	.map {
@@ -9,8 +15,8 @@
 	}
 
 	.content {
-		flex: 40%;
-    height: 100%;
+		display: block;
+		flex:1;
 	}
 
   .list {
@@ -35,15 +41,15 @@
 
 	<p-menubar [model]="menuItems"></p-menubar>
   
-	<p-splitter [panelSizes]="[20, 80]" [minSizes]="[20, 40]" class="content" [style]="{ 'height': '100%' }" > 
-		<ng-template pTemplate> 
+	<p-splitter [panelSizes]="[60, 40]" [minSizes]="[20, 40]" class="content" > 
 
-			<p-listbox [options]="countries" [(ngModel)]="selectedCountries" [metaKeySelection]="false" [filter]="true" [multiple]="true" optionLabel="name" [listStyle]="{'max-height':'100%'}" [style]="{'width':'100%'}">
+		<ng-template pTemplate>
+			<p-listbox [options]="countries" [(ngModel)]="selectedCountries" [metaKeySelection]="false" [filter]="true" [multiple]="true" optionLabel="name" [listStyle]="{'max-height':'auto'}" [style]="{'width':'100%'}">
 				<ng-template let-country pTemplate="item">
 
 					<span class="title">Residencias</span>
 		
-					<p-listbox [options]="countries" [(ngModel)]="selectedCountries" [metaKeySelection]="false" [filter]="true" [multiple]="true" optionLabel="name" [listStyle]="{'max-height':'100%'}" [style]="{'width':'100%'}">
+					<p-listbox [options]="countries" [(ngModel)]="selectedCountries" [metaKeySelection]="false" [filter]="true" [multiple]="true" optionLabel="name" [listStyle]="{'max-height':'auto'}" [style]="{'width':'100%'}">
 						<ng-template let-country pTemplate="item">
 							<div class="country-item">
 								<div>{{country.name}}</div>
@@ -53,7 +59,6 @@
 					
 				</ng-template>
 			</p-listbox>
-
 		</ng-template> 
 
 		<ng-template pTemplate>
@@ -63,6 +68,8 @@
 		</ng-template>
 
 	</p-splitter>
+
+	<p-menubar [model]="menuItems"></p-menubar>
 
 </main>
 

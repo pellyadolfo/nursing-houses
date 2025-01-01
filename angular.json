@@ -17,7 +17,10 @@
         "build": {
           "builder": "@ngx-env/builder:application",
           "options": {
-            "outputPath": "dist/primebox",
+						"outputPath": {
+							"base": "dist/primebox",
+							"browser": ""
+						},
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [

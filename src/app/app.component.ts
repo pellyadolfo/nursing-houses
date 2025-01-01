@@ -13,6 +13,7 @@ import { MenubarModule } from 'primeng/menubar';
 
 import cityList from '../assets/cities.json';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { PanelModule } from 'primeng/panel';
 
 interface City {
   name: string;
@@ -27,7 +28,7 @@ interface Country {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, InputTextModule, ButtonModule, MessageModule, FormsModule, AngularGoogleMapsComponent, ListboxModule, SplitterModule, MenubarModule, ScrollPanelModule],
+  imports: [CommonModule, RouterOutlet, InputTextModule, ButtonModule, MessageModule, FormsModule, AngularGoogleMapsComponent, ListboxModule, SplitterModule, MenubarModule, ScrollPanelModule, PanelModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

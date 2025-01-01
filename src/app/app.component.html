@@ -45,15 +45,33 @@
 
 
 		<ng-template pTemplate>
-
 			<div class="row row-cols-3 g-3">
+
+
+
+
+				<div class="col" *ngFor="let city of cityList">
+					<div class="card">
+						<img [src]="city.url" class="card-img-top" [alt]="city.name"/>
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">
+								{{city.desc}}
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+
+
 				<div class="col">
 					<div class="card">
 						<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top" alt="Hollywood Sign on The Hill" />
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">
-								This is a longer card with supporting text below as a natural lead-in to
+								0This is a longer card with supporting text below as a natural lead-in to
 								additional content. This content is a little bit longer.
 							</p>
 						</div>
@@ -65,7 +83,7 @@
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">
-								This is a longer card with supporting text below as a natural lead-in to
+								0This is a longer card with supporting text below as a natural lead-in to
 								additional content. This content is a little bit longer.
 							</p>
 						</div>
@@ -76,7 +94,7 @@
 						<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt="Los Angeles Skyscrapers" />
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+							<p class="card-text">0This is a longer card with supporting text below as a natural lead-in to
 								additional content.</p>
 						</div>
 					</div>
@@ -88,7 +106,7 @@
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">
-								This is a longer card with supporting text below as a natural lead-in to
+								0This is a longer card with supporting text below as a natural lead-in to
 								additional content.
 							</p>
 						</div>
@@ -100,7 +118,7 @@
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">
-								This is a longer card with supporting text below as a natural lead-in to
+								0This is a longer card with supporting text below as a natural lead-in to
 								additional content. This content is a little bit longer.
 							</p>
 						</div>
@@ -112,12 +130,13 @@
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">
-								This is a longer card with supporting text below as a natural lead-in to
+								0This is a longer card with supporting text below as a natural lead-in to
 								additional content. This content is a little bit longer.
 							</p>
 						</div>
 					</div>
 				</div>
+
 			</div>
 
 			<!--p-listbox [options]="countries" [(ngModel)]="selectedCountries" [metaKeySelection]="false" [filter]="true" [multiple]="true" optionLabel="name" [listStyle]="{'max-height':'auto'}" [style]="{'width':'100%'}">
@@ -133,6 +152,7 @@
 
 				</ng-template>
 			</p-listbox-->
+
 		</ng-template> 
 
 		<ng-template pTemplate>

@@ -11,6 +11,8 @@ import { MenuItem, SelectItemGroup } from 'primeng/api';
 import { SplitterModule } from 'primeng/splitter';
 import { MenubarModule } from 'primeng/menubar';
 
+import cityList from '../assets/cities.json';
+
 interface City {
   name: string;
   code: string;
@@ -36,7 +38,9 @@ export class AppComponent {
 
   countries: any[];
 
-  //selectedCity: City;
+  cityList: any[];
+
+	//selectedCity: City;
 	selectedCountries: any[];
 
   groupedCities: SelectItemGroup[];
@@ -119,6 +123,8 @@ export class AppComponent {
         ]
       }
     ];
+
+		this.cityList = cityList;
   }
 
   onClick() {

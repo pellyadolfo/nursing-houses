@@ -24,6 +24,12 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: 'Create .env file'
+        run: |
+          touch .env
+          echo NG_APP_GOOGLE_MAPS_KEY=${{ secrets.NG_APP_GOOGLE_MAPS_KEY }} >> .env
+          cat .env
+
       - name: Build
         run: npm run build:github
 
@@ -38,5 +44,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2.0.4
-        env:
-          NG_APP_GOOGLE_MAPS_KEY: ${{ secrets.NG_APP_GOOGLE_MAPS_KEY }}
+

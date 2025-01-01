@@ -12,6 +12,7 @@ import { SplitterModule } from 'primeng/splitter';
 import { MenubarModule } from 'primeng/menubar';
 
 import cityList from '../assets/cities.json';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
 
 interface City {
   name: string;
@@ -26,7 +27,7 @@ interface Country {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, InputTextModule, ButtonModule, MessageModule, FormsModule, AngularGoogleMapsComponent, ListboxModule, SplitterModule, MenubarModule],
+  imports: [CommonModule, RouterOutlet, InputTextModule, ButtonModule, MessageModule, FormsModule, AngularGoogleMapsComponent, ListboxModule, SplitterModule, MenubarModule, ScrollPanelModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

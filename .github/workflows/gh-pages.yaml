@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: ng build --base-href /nursing-houses/
+        run: npm run build:github
 
       - name: Setup Pages
         uses: actions/configure-pages@v3

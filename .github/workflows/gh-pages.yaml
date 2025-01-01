@@ -33,10 +33,10 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: 'dist/primebox/'
+          path: './dist/primebox/browser'
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v2.0.4
         with:
           NG_APP_GOOGLE_MAPS_KEY: ${{ secrets.NG_APP_GOOGLE_MAPS_KEY }}

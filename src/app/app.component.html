@@ -43,12 +43,86 @@
   
 	<p-splitter [panelSizes]="[60, 40]" [minSizes]="[20, 40]" [style]="{ height: '100%' }" class="content" > 
 
-		<ng-template pTemplate>
-			<p-listbox [options]="countries" [(ngModel)]="selectedCountries" [metaKeySelection]="false" [filter]="true" [multiple]="true" optionLabel="name" [listStyle]="{'max-height':'auto'}" [style]="{'width':'100%'}">
-				<ng-template let-country pTemplate="item">
 
-					<span class="title">Residencias</span>
-		
+		<ng-template pTemplate>
+
+			<div class="row row-cols-3 g-3">
+				<div class="col">
+					<div class="card">
+						<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top" alt="Hollywood Sign on The Hill" />
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">
+								This is a longer card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" alt="Palm Springs Road" />
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">
+								This is a longer card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt="Los Angeles Skyscrapers" />
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+								additional content.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card">
+						<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers" />
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">
+								This is a longer card with supporting text below as a natural lead-in to
+								additional content.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/046.webp" class="card-img-top" alt="Skyscrapers" />
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">
+								This is a longer card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/050.webp" class="card-img-top" alt="Skyscrapers" />
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">
+								This is a longer card with supporting text below as a natural lead-in to
+								additional content. This content is a little bit longer.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--p-listbox [options]="countries" [(ngModel)]="selectedCountries" [metaKeySelection]="false" [filter]="true" [multiple]="true" optionLabel="name" [listStyle]="{'max-height':'auto'}" [style]="{'width':'100%'}">
+				<ng-template let-country pTemplate="item">
+	
 					<p-listbox [options]="countries" [(ngModel)]="selectedCountries" [metaKeySelection]="false" [filter]="true" [multiple]="true" optionLabel="name" [listStyle]="{'max-height':'auto'}" [style]="{'width':'100%'}">
 						<ng-template let-country pTemplate="item">
 							<div class="country-item">
@@ -56,9 +130,9 @@
 							</div>
 						</ng-template>
 					</p-listbox>
-					
+
 				</ng-template>
-			</p-listbox>
+			</p-listbox-->
 		</ng-template> 
 
 		<ng-template pTemplate>

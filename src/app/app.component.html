@@ -40,26 +40,33 @@
 <main class="main">
 
 	<p-menubar [model]="menuItems"></p-menubar>
-  
+
+
 	<p-splitter [panelSizes]="[60, 40]" [minSizes]="[20, 40]" [style]="{ height: '100%' }" class="content" > 
 
 		<ng-template pTemplate>
-			<p-scrollpanel [style]="{ height: 'calc(100vh - 100px)' }">
-				<div class="row row-cols-3 g-3">
+			<p-scrollpanel [style]="{ height: 'calc(100vh - 110px)' }">
 
-					<div class="col" *ngFor="let city of cityList">
-						<div class="card">
-							<img [src]="city.url" class="card-img-top" [alt]="city.name"/>
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">
-									{{city.desc}}
-								</p>
+				<p-menubar [model]="menuItems"></p-menubar>
+				
+				<div class="container">
+					<div class="row g-3">
+
+						<div class="col-12 col-sm-6 col-md-4" *ngFor="let city of cityList">
+							<div class="card">
+								<img [src]="city.url" class="card-img-top" [alt]="city.name"/>
+								<div class="card-body">
+									<h5 class="card-title">{{city.name}}</h5>
+									<p class="card-text">
+										{{city.desc}}
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
 
+					</div>
 				</div>
+
 			</p-scrollpanel>
 		</ng-template> 
 

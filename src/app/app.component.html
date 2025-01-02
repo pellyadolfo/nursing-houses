@@ -99,8 +99,8 @@
 					<div class="row row-cols-2 g-3">
 
 						<div class="col-12 col-sm-6 col-md-4" *ngFor="let nursingHouse of nursingHouses">
-							<div class="card">
-								<img [src]="nursingHouse.url" class="card-img-top" [alt]="nursingHouse.name"/>
+							<div class="card h-100">
+								<img [src]="nursingHouse.image" class="card-img-top" [alt]="nursingHouse.name"/>
 								<div class="card-body">
 									<h5 class="card-title">{{nursingHouse.name}}</h5>
 									<p class="card-text">{{nursingHouse.desc}}</p>

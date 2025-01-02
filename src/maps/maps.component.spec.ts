@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AngularGoogleMapsComponent } from './angular-google-maps.component';
+import { AngularGoogleMapsComponent } from './maps.component';
 
 describe('AngularGoogleMapsComponent', () => {
   let component: AngularGoogleMapsComponent;

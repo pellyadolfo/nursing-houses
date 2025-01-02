@@ -10,8 +10,8 @@ import {GoogleMap, MapCircle, MapInfoWindow, MapMarker} from "@angular/google-ma
     MapMarker,
     MapInfoWindow
   ],
-  templateUrl: './angular-google-maps.component.html',
-  styleUrl: './angular-google-maps.component.scss'
+  templateUrl: './maps.component.html',
+  styleUrl: './maps.component.scss'
 })
 export class AngularGoogleMapsComponent {
   @ViewChildren(MapInfoWindow) infoWindows!: QueryList<MapInfoWindow>;

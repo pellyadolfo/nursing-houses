@@ -5,7 +5,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { MessageModule } from 'primeng/message';
 import { CommonModule } from '@angular/common';
-import { AngularGoogleMapsComponent } from '../angular-google-maps/angular-google-maps.component';
+import { AngularGoogleMapsComponent } from '../maps/maps.component';
 import { ListboxModule } from 'primeng/listbox';
 import { MenuItem, SelectItemGroup } from 'primeng/api';
 import { SplitterModule } from 'primeng/splitter';

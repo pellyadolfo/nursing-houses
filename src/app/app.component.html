@@ -98,12 +98,12 @@
 				<div class="container">
 					<div class="row row-cols-2 g-3">
 
-						<div class="col-12 col-sm-6 col-md-4" *ngFor="let city of cityList">
+						<div class="col-12 col-sm-6 col-md-4" *ngFor="let nursingHouse of nursingHouses">
 							<div class="card">
-								<img [src]="city.url" class="card-img-top" [alt]="city.name"/>
+								<img [src]="nursingHouse.url" class="card-img-top" [alt]="nursingHouse.name"/>
 								<div class="card-body">
-									<h5 class="card-title">{{city.name}}</h5>
-									<p class="card-text">{{city.desc}}</p>
+									<h5 class="card-title">{{nursingHouse.name}}</h5>
+									<p class="card-text">{{nursingHouse.desc}}</p>
 								</div>
 							</div>
 						</div>

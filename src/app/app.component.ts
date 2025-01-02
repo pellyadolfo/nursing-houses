@@ -11,7 +11,7 @@ import { MenuItem, SelectItemGroup } from 'primeng/api';
 import { SplitterModule } from 'primeng/splitter';
 import { MenubarModule } from 'primeng/menubar';
 
-import cityList from '../assets/cities.json';
+import nursingHouses from '../assets/nursinghouses.json';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { PanelModule } from 'primeng/panel';
 
@@ -40,7 +40,7 @@ export class AppComponent {
 
   countries: any[];
 
-  cityList: any[];
+  nursingHouses: any[];
 
 	//selectedCity: City;
 	selectedCountries: any[];
@@ -126,7 +126,7 @@ export class AppComponent {
       }
     ];
 
-		this.cityList = cityList;
+		this.nursingHouses = nursingHouses;
   }
 
   onClick() {

@@ -1,7 +1,5 @@
 import {Component, QueryList, ViewChildren} from '@angular/core';
 import {GoogleMap, MapCircle, MapInfoWindow, MapMarker} from "@angular/google-maps";
-import { AddNursingHouseToMapService } from '../services/nursinghouses.service';
-import { Subscription } from 'rxjs';
 import nursingHouses from '../assets/nursinghouses.json';
 
 interface IMapCircleOptions{

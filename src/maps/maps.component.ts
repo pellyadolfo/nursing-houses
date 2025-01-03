@@ -53,16 +53,12 @@ export class AngularGoogleMapsComponent {
 		this.nursingHouses = nursingHouses;
 	}
   ngOnInit() {
-
 		this.nursingHouses.forEach(nursingHouse => {
-			//console.log("coords", nursingHouse.coords)
 			const coords = nursingHouse.coords.split(',');
-
 			const lat = parseFloat(coords[0]);
 			const lng = parseFloat(coords[1]);
 			//console.log("lat", lat)
 			//console.log("lng", lng)
-
 			this.addMarker(lng, lat);
 		});
   }
@@ -75,41 +71,10 @@ export class AngularGoogleMapsComponent {
   circles: IMapCircle[] = []
 
   clickMap(event: google.maps.MapMouseEvent) {
-    const lat = event.latLng?.lat();
-    const lng = event.latLng?.lng();
-    this.circles.push({
-      id: this.circles.length + 1,
-      lat: lat,
-      lng: lng,
-      circleOptions: {
-        fillColor: '#ff0000',
-        fillOpacity: 0.5,
-        strokeWeight: 1,
-        strokeColor: '#ff0000',
-        clickable: false,
-        editable: false,
-        zIndex: 1,
-        radius: 10 // in meters
-      },
-      markerOptions: {
-        lat: lat,
-        lng: lng,
-        label: {
-          text: 'A',
-          className: 'circle-label',
-          fontSize: '12px'
-        }
-      },
-      markerWindowInfo: {
-        html: '<div>Marker A</div>'
-      }
-    } as IMapCircle);
+		// do nothing
   }
 
   addMarker(lat: any, lng: any) {
-
-		//console.log("adding", lat, lng)
-
     this.circles.push({
       id: this.circles.length + 1,
       lat: lat,

@@ -49,7 +49,7 @@ export class AppComponent {
 
 	menuItems: MenuItem[] = [];
 
-	mobile: boolean = false;
+	desktop: boolean = true;
 
   constructor() {
     this.cities = [
@@ -129,9 +129,11 @@ export class AppComponent {
 
 		this.nursingHouses = nursingHouses;
 
-		if (window.screen.width < 360) { // 768px portrait
-			this.mobile = true;
+		if (document.documentElement.clientWidth < 400) { // 768px portrait
+			this.desktop = false;
 		}
+		console.log(document.documentElement.clientWidth)
+		console.log(this.desktop)
   }
 
   onClick() {

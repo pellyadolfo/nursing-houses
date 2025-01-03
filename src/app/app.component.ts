@@ -49,6 +49,8 @@ export class AppComponent {
 
 	menuItems: MenuItem[] = [];
 
+	mobile: boolean = false;
+
   constructor() {
     this.cities = [
       { name: "New York", code: "NY" },
@@ -89,7 +91,6 @@ export class AppComponent {
 			{ name: "Tonga", code: "TO"}, 
 		];
 
-
 		//this.selectedCity;
 		this.selectedCountries = []
 
@@ -127,6 +128,10 @@ export class AppComponent {
     ];
 
 		this.nursingHouses = nursingHouses;
+
+		if (window.screen.width < 360) { // 768px portrait
+			this.mobile = true;
+		}
   }
 
   onClick() {

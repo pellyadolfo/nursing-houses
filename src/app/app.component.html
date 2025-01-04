@@ -103,7 +103,10 @@
 								<img [src]="nursingHouse.image" class="card-img-top" [alt]="nursingHouse.name"/>
 								<div class="card-body">
 									<h5 class="card-title"><a [href]="nursingHouse.web" target="_blank">{{nursingHouse.name}}</a></h5>
-									<p class="card-text">{{nursingHouse.desc}}</p>
+									<p>{{nursingHouse.address}} Plazas</p>
+									<p>{{nursingHouse.num}} Plazas</p>
+									<p *ngIf="nursingHouse.price">Desde {{nursingHouse.price}} €</p>
+									<!--p class="card-text">{{nursingHouse.desc}}</p-->
 								</div>
 							</div>
 						</div>

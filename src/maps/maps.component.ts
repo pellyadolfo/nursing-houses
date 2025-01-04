@@ -59,7 +59,7 @@ export class AngularGoogleMapsComponent {
 			const lng = parseFloat(coords[1]);
 			//console.log("lat", lat)
 			//console.log("lng", lng)
-			this.addMarker(lng, lat);
+			this.addMarker(lng, lat, nursingHouse);
 		});
   }
 
@@ -74,7 +74,7 @@ export class AngularGoogleMapsComponent {
 		// do nothing
   }
 
-  addMarker(lat: any, lng: any) {
+  addMarker(lat: any, lng: any, nursingHouse: any) {
     this.circles.push({
       id: this.circles.length + 1,
       lat: lat,
@@ -99,7 +99,7 @@ export class AngularGoogleMapsComponent {
         }
       },
       markerWindowInfo: {
-        html: '<div>Marker A</div>'
+        html: '<div><a href=\"' + nursingHouse.web + '\" target=\"_blank\">' + nursingHouse.name + '</a></div>'
       }
     } as IMapCircle);
   }

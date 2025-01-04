@@ -93,7 +93,7 @@ export class AngularGoogleMapsComponent {
         lat: lat,
         lng: lng,
         label: {
-          text: 'A',
+          text: nursingHouse.num,
           className: 'circle-label',
           fontSize: '12px'
         }

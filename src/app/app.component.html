@@ -50,45 +50,89 @@
 	<p-splitter [panelSizes]="[60, 40]" [minSizes]="[20, 40]" class="content" > 
 
 		<ng-template pTemplate>
+
 			<p-scrollpanel [style]="{ height: 'calc(100vh - 110px)' }">
 
 				<p-panel>
+
+					<div class="container">
+						<!--p-panel header="Header"-->
+							<p-dropdown [options]="cities" [(ngModel)]="selectedCityCode" optionLabel="name" optionValue="code" class="w-100 mb-4"></p-dropdown>
+						<!--/p-panel-->
+					</div>
+
 					<div class="container">
 						<div class="row g-3">
-							<div class="col-6 col-md-2">
-								<div class="card text-center">
-									<i class="fa fa-solid fa-gift fa-3x" aria-hidden="true"></i>
-									<h5>Single Room</h5>
+							<div class="col-2 col-md-1">
+								<div class="card text-center border-0">
+									<i class="fa fa-solid fa-gift fa-lg" aria-hidden="true"></i>
+									<span class="fs-6 d-none d-md-block">Single</span>
 								</div>
 							</div>
-							<div class="col-6 col-md-2">
-								<div class="card text-center">
-									<i class="fa fa-solid fa-bicycle fa-3x" aria-hidden="true"></i>
-									<h5>Gym</h5>
+							<div class="col-2 col-md-1">
+								<div class="card text-center border-0">
+									<i class="fa fa-solid fa-bicycle fa-lg" aria-hidden="true"></i>
+									<h6 class="fs-6 d-none d-md-block">Gym</h6>
 								</div>
 							</div>
-							<div class="col-6 col-md-2">
-								<div class="card text-center">
-									<i class="fa fa-solid fa-headphones fa-3x" aria-hidden="true"></i>
-									<h5>Park</h5>
+							<div class="col-2 col-md-1">
+								<div class="card text-center border-0">
+									<i class="fa fa-solid fa-headphones fa-lg" aria-hidden="true"></i>
+									<h6 class="fs-6 d-none d-md-block">Park</h6>
 								</div>
 							</div>
-							<div class="col-6 col-md-2">
-								<div class="card text-center">
-									<i class="fa fa-solid fa-print fa-3x" aria-hidden="true"></i>
-									<h5>Pool</h5>
+							<div class="col-2 col-md-1">
+								<div class="card text-center border-0">
+									<i class="fa fa-solid fa-print fa-lg" aria-hidden="true"></i>
+									<h6 class="fs-6 d-none d-md-block">Pool</h6>
 								</div>
 							</div>
-							<div class="col-6 col-md-2">
-								<div class="card text-center">
-									<i class="fa fa-solid fa-plane fa-3x" aria-hidden="true"></i>
-									<h5>Card title</h5>
+							<div class="col-2 col-md-1">
+								<div class="card text-center border-0">
+									<i class="fa fa-solid fa-plane fa-lg" aria-hidden="true"></i>
+									<h6 class="fs-6 d-none d-md-block">Card title</h6>
 								</div>
 							</div>
-							<div class="col-6 col-md-2">
-								<div class="card text-center">
-									<i class="fa fa-solid fa-wifi fa-3x" aria-hidden="true"></i>
-									<h5>Card title</h5>
+							<div class="col-2 col-md-1">
+								<div class="card text-center border-0">
+									<i class="fa fa-solid fa-wifi fa-lg" aria-hidden="true"></i>
+									<h6 class="fs-6 d-none d-md-block">Card title</h6>
+								</div>
+							</div>
+							<div class="col-2 col-md-1">
+								<div class="card text-center border-0">
+									<i class="fa fa-solid fa-gift fa-lg" aria-hidden="true"></i>
+									<h6 class="fs-6 d-none d-md-block">Single</h6>
+								</div>
+							</div>
+							<div class="col-2 col-md-1">
+								<div class="card text-center border-0">
+									<i class="fa fa-solid fa-bicycle fa-lg" aria-hidden="true"></i>
+									<h6 class="fs-6 d-none d-md-block">Gym</h6>
+								</div>
+							</div>
+							<div class="col-2 col-md-1">
+								<div class="card text-center border-0">
+									<i class="fa fa-solid fa-headphones fa-lg" aria-hidden="true"></i>
+									<h6 class="fs-6 d-none d-md-block">Park</h6>
+								</div>
+							</div>
+							<div class="col-2 col-md-1">
+								<div class="card text-center border-0">
+									<i class="fa fa-solid fa-print fa-lg" aria-hidden="true"></i>
+									<h6 class="fs-6 d-none d-md-block">Pool</h6>
+								</div>
+							</div>
+							<div class="col-2 col-md-1">
+								<div class="card text-center border-0">
+									<i class="fa fa-solid fa-plane fa-lg" aria-hidden="true"></i>
+									<h6 class="fs-6 d-none d-md-block">Card title</h6>
+								</div>
+							</div>
+							<div class="col-2 col-md-1">
+								<div class="card text-center border-0">
+									<i class="fa fa-solid fa-wifi fa-lg" aria-hidden="true"></i>
+									<h6 class="fs-6 d-none d-md-block">Card title</h6>
 								</div>
 							</div>
 						</div>

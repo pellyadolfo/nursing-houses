@@ -14,6 +14,7 @@ import { MenubarModule } from 'primeng/menubar';
 import nursingHouses from '../assets/nursinghouses.json';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { PanelModule } from 'primeng/panel';
+import { DropdownModule } from 'primeng/dropdown';
 
 interface City {
   name: string;
@@ -28,13 +29,15 @@ interface Country {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, InputTextModule, ButtonModule, MessageModule, FormsModule, AngularGoogleMapsComponent, ListboxModule, SplitterModule, MenubarModule, ScrollPanelModule, PanelModule],
+  imports: [CommonModule, RouterOutlet, InputTextModule, ButtonModule, MessageModule, FormsModule, AngularGoogleMapsComponent, ListboxModule, SplitterModule, MenubarModule, ScrollPanelModule, PanelModule, DropdownModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   text = '';
   msg = '';
+
+	selectedCityCode = 'GI';
 
   cities: City[];
 
@@ -53,11 +56,11 @@ export class AppComponent {
 
   constructor() {
     this.cities = [
-      { name: "New York", code: "NY" },
-      { name: "Rome", code: "RM" },
-      { name: "London", code: "LDN" },
-      { name: "Istanbul", code: "IST" },
-      { name: "Paris", code: "PRS" }
+      { name: "Oviedo", code: "OV" },
+      { name: "Gijon", code: "GI" },
+      { name: "Aviles", code: "AV" },
+      { name: "Nava", code: "NA" },
+      { name: "Luanco", code: "LU" }
     ];
 
     this.countries = [

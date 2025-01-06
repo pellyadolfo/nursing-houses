@@ -11,7 +11,7 @@ import { MenuItem, SelectItemGroup } from 'primeng/api';
 import { SplitterModule } from 'primeng/splitter';
 import { MenubarModule } from 'primeng/menubar';
 
-import nursingHouses from '../assets/nursinghouses.json';
+import merchants from '../assets/RES_ES_GI.json';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { PanelModule } from 'primeng/panel';
 import { DropdownModule } from 'primeng/dropdown';
@@ -53,8 +53,7 @@ export class AppComponent {
 	selectedCountryCode = 'ES';
 	selectedCountries: any[];
 
-  nursingHouses: any[];
-
+  merchants: any[];
 
   groupedCities: SelectItemGroup[];
 
@@ -147,7 +146,7 @@ export class AppComponent {
       }
     ];
 
-		this.nursingHouses = nursingHouses;
+		this.merchants = merchants;
 
 		if (document.documentElement.clientWidth < 400) { // 768px portrait
 			this.desktop = false;

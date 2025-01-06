@@ -150,15 +150,15 @@
 				<div class="container">
 					<div class="row row-cols-2 g-3">
 
-						<div class="col-12 col-sm-6 col-md-4" *ngFor="let nursingHouse of nursingHouses">
+						<div class="col-12 col-sm-6 col-md-4" *ngFor="let merchant of merchants">
 							<div class="card h-100">
-								<img [src]="nursingHouse.image" class="card-img-top" [alt]="nursingHouse.name"/>
+								<img [src]="merchant.image" class="card-img-top" [alt]="merchant.name"/>
 								<div class="card-body">
-									<h5 class="card-title"><a [href]="nursingHouse.web" target="_blank">{{nursingHouse.name}}</a></h5>
-									<p>{{nursingHouse.address}}</p>
-									<p>{{nursingHouse.num}} Plazas</p>
-									<p *ngIf="nursingHouse.price">Desde {{nursingHouse.price}} €</p>
-									<!--p class="card-text">{{nursingHouse.desc}}</p-->
+									<h5 class="card-title"><a [href]="merchant.web" target="_blank">{{merchant.name}}</a></h5>
+									<p>{{merchant.address}}</p>
+									<p>{{merchant.num}} Plazas</p>
+									<p *ngIf="merchant.price">Desde {{merchant.price}} €</p>
+									<!--p class="card-text">{{merchant.desc}}</p-->
 								</div>
 							</div>
 						</div>

@@ -1,6 +1,6 @@
 import {Component, QueryList, ViewChildren} from '@angular/core';
 import {GoogleMap, MapCircle, MapInfoWindow, MapMarker} from "@angular/google-maps";
-import nursingHouses from '../assets/nursinghouses.json';
+import merchants from '../assets/RES_ES_GI.json';
 
 interface IMapCircleOptions{
   fillColor: string;
@@ -47,19 +47,19 @@ interface IMapMarker{
 export class AngularGoogleMapsComponent {
   @ViewChildren(MapInfoWindow) infoWindows!: QueryList<MapInfoWindow>;
 
-	nursingHouses: any[];
+	merchants: any[];
 
 	constructor() {
-		this.nursingHouses = nursingHouses;
+		this.merchants = merchants;
 	}
   ngOnInit() {
-		this.nursingHouses.forEach(nursingHouse => {
-			const coords = nursingHouse.coords.split(',');
+		this.merchants.forEach(merchants => {
+			const coords = merchants.coords.split(',');
 			const lat = parseFloat(coords[0]);
 			const lng = parseFloat(coords[1]);
 			//console.log("lat", lat)
 			//console.log("lng", lng)
-			this.addMarker(lng, lat, nursingHouse);
+			this.addMarker(lng, lat, merchants);
 		});
   }
 
@@ -74,7 +74,7 @@ export class AngularGoogleMapsComponent {
 		// do nothing
   }
 
-  addMarker(lat: any, lng: any, nursingHouse: any) {
+  addMarker(lat: any, lng: any, merchant: any) {
     this.circles.push({
       id: this.circles.length + 1,
       lat: lat,
@@ -93,13 +93,13 @@ export class AngularGoogleMapsComponent {
         lat: lat,
         lng: lng,
         label: {
-          text: nursingHouse.num,
+          text: merchant.num,
           className: 'circle-label',
           fontSize: '12px'
         }
       },
       markerWindowInfo: {
-        html: '<div><a href=\"' + nursingHouse.web + '\" target=\"_blank\">' + nursingHouse.name + '</a></div>'
+        html: '<div><a href=\"' + merchant.web + '\" target=\"_blank\">' + merchant.name + '</a></div>'
       }
     } as IMapCircle);
   }

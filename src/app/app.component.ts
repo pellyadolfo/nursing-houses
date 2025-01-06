@@ -16,6 +16,11 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { PanelModule } from 'primeng/panel';
 import { DropdownModule } from 'primeng/dropdown';
 
+interface Service {
+  name: string;
+  code: string;
+}
+
 interface City {
   name: string;
   code: string;
@@ -37,16 +42,19 @@ export class AppComponent {
   text = '';
   msg = '';
 
-	selectedCityCode = 'GI';
+
+  services: Service[];
+	selectedServiceCode = 'RE';
 
   cities: City[];
+	selectedCityCode = 'GI';
+	//selectedCity: City;
 
   countries: any[];
+	selectedCountries: any[];
 
   nursingHouses: any[];
 
-	//selectedCity: City;
-	selectedCountries: any[];
 
   groupedCities: SelectItemGroup[];
 
@@ -55,6 +63,14 @@ export class AppComponent {
 	desktop: boolean = true;
 
   constructor() {
+
+		this.services = [
+      { name: "Residencias", code: "RE" },
+      { name: "Centros de Dia", code: "CD" },
+      { name: "Asistencia a Mayores", code: "AM" },
+      { name: "Asistencia a Domicilio", code: "AD" },
+    ];
+
     this.cities = [
       { name: "Oviedo", code: "OV" },
       { name: "Gijon", code: "GI" },

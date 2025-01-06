@@ -42,7 +42,6 @@ export class AppComponent {
   text = '';
   msg = '';
 
-
   services: Service[];
 	selectedServiceCode = 'RE';
 
@@ -51,6 +50,7 @@ export class AppComponent {
 	//selectedCity: City;
 
   countries: any[];
+	selectedCountryCode = 'ES';
 	selectedCountries: any[];
 
   nursingHouses: any[];
@@ -71,19 +71,12 @@ export class AppComponent {
       { name: "Asistencia a Domicilio", code: "AD" },
     ];
 
-    this.cities = [
-      { name: "Oviedo", code: "OV" },
-      { name: "Gijon", code: "GI" },
-      { name: "Aviles", code: "AV" },
-      { name: "Nava", code: "NA" },
-      { name: "Luanco", code: "LU" }
-    ];
-
     this.countries = [
       { name: "Australia", code: "AU" },
       { name: "Brazil", code: "BR" },
       { name: "China", code: "CN" },
       { name: "Egypt", code: "EG" },
+      { name: "España", code: "ES" },
       { name: "France", code: "FR" },
       { name: "Germany", code: "DE" },
       { name: "India", code: "IN" },
@@ -109,6 +102,14 @@ export class AppComponent {
 			{ name: "Tokelau", code: "TK"}, 
 			{ name: "Tonga", code: "TO"}, 
 		];
+
+    this.cities = [
+      { name: "Oviedo", code: "OV" },
+      { name: "Gijón", code: "GI" },
+      { name: "Avilés", code: "AV" },
+      { name: "Nava", code: "NA" },
+      { name: "Luanco", code: "LU" }
+    ];
 
 		//this.selectedCity;
 		this.selectedCountries = []

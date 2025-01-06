@@ -11,7 +11,7 @@ import { MenuItem, SelectItemGroup } from 'primeng/api';
 import { SplitterModule } from 'primeng/splitter';
 import { MenubarModule } from 'primeng/menubar';
 
-import merchants from '../assets/RES_ES_GI.json';
+import merchants from '../assets/ES_GI.json';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { PanelModule } from 'primeng/panel';
 import { DropdownModule } from 'primeng/dropdown';
@@ -148,7 +148,7 @@ export class AppComponent {
       }
     ];
 
-		this.merchants = merchants;
+		this.merchants = merchants.RES;
 
 		if (document.documentElement.clientWidth < 400) { // 768px portrait
 			this.desktop = false;

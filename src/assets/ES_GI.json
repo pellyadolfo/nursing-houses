@@ -1,4 +1,5 @@
-[
+{ 
+	"RES" : [
 	{"name": "Residencia Lar de Noega", "num": "285", "price": "1870", "address":"C/ Galileo Galilei, 237. 33392 Gijón", "web": "https://www.lardenoega.com/", "coords": "-5.70033420, 43.49919580", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6m3APd48Jka0Zq6JbPS8imAGd0QMT6RhXrQ&s", "desc": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."},
 	{"name": "Gerontológico Jovellanos", "num": "191", "price": "", "address":"C/ Muros de Galicia, 3 (Viesques) 33204 Gijón", "web": "http://www.serviciosgerontologicos.net/", "coords": "-5.64906740, 43.52888060", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6m3APd48Jka0Zq6JbPS8imAGd0QMT6RhXrQ&s", "desc": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."},
 	{"name": "Coliseé Plaza Real Gijón", "num": "170", "price": "", "address":"Camino de Monteviento, 394. Somió 33203 Gijón", "web": "https://colisee.es/centros/residencia-colisee-gijon/", "coords": "-5.61273680, 43.54367060", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6m3APd48Jka0Zq6JbPS8imAGd0QMT6RhXrQ&s", "desc": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."},
@@ -53,4 +54,8 @@
 	{"name": "Residencia La Casina de Vania", "num": "14", "price": "1300", "address":"Urbanización El Curullu, 998. Nº 3. 33394 Gijón", "web": "http://lacasinadevania.es/", "coords": "-5.64176130, 43.52380610", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6m3APd48Jka0Zq6JbPS8imAGd0QMT6RhXrQ&s", "desc": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."},
 	{"name": "Residencia Santa Irene", "num": "14", "price": "1400", "address":"Camino La Llana Amonte de Tremañes, 715. 33392 Gijón", "web": "https://residenciasasturias.com/residencia.php?id=125", "coords": "-5.77432240, 43.51210560", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6m3APd48Jka0Zq6JbPS8imAGd0QMT6RhXrQ&s", "desc": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."},
 	{"name": "Residencia San Nicolás", "num": "11", "price": "1370", "address":"Camín del Monte, 322. 33203 Gijón", "web": "https://www.facebook.com/people/Residencia-San-Nicol%C3%A1s/100009907571651/", "coords": "-5.62182070, 43.54856270", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6m3APd48Jka0Zq6JbPS8imAGd0QMT6RhXrQ&s", "desc": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."}
-]
+	],
+	"CD": [],
+	"AM": [],
+	"AD": []
+}

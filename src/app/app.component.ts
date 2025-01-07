@@ -11,10 +11,11 @@ import { MenuItem, SelectItemGroup } from 'primeng/api';
 import { SplitterModule } from 'primeng/splitter';
 import { MenubarModule } from 'primeng/menubar';
 
-import merchants from '../assets/ES_GI.json';
+import merchants_ES_GI from '../assets/ES_GI.json';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { PanelModule } from 'primeng/panel';
-import { DropdownModule } from 'primeng/dropdown';
+import { SelectChangeEvent, SelectModule } from 'primeng/select';
+import { DataImportsService } from '../services/dataImportsService';
 
 interface Service {
   name: string;
@@ -37,7 +38,7 @@ interface Country {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, InputTextModule, ButtonModule, MessageModule, FormsModule, AngularGoogleMapsComponent, ListboxModule, SplitterModule, MenubarModule, ScrollPanelModule, PanelModule, DropdownModule],
+  imports: [CommonModule, RouterOutlet, InputTextModule, ButtonModule, MessageModule, FormsModule, AngularGoogleMapsComponent, ListboxModule, SplitterModule, MenubarModule, ScrollPanelModule, PanelModule, SelectModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -64,7 +65,7 @@ export class AppComponent {
 
 	desktop: boolean = true;
 
-  constructor() {
+  constructor(private dataImportsService: DataImportsService) {
 
 		this.services = [
       { name: "Residencias", code: "RE", inactive: false },
@@ -148,14 +149,21 @@ export class AppComponent {
       }
     ];
 
-		this.merchants = merchants.RES;
+		this.merchants = merchants_ES_GI.RES;
 
 		if (document.documentElement.clientWidth < 400) { // 768px portrait
 			this.desktop = false;
 		}
-		console.log(document.documentElement.clientWidth)
-		console.log(this.desktop)
   }
+
+	onChange(event: SelectChangeEvent) {
+    console.log(this.selectedCountryCode);
+    console.log(this.selectedCityCode);
+
+		this.dataImportsService.loadChildren(this.selectedCountryCode, this.selectedCityCode).then( result => {
+			this.merchants = result;
+		})
+	}
 
   onClick() {
     this.msg = 'Welcome ' + this.text;

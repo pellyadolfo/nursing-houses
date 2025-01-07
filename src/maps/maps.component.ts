@@ -64,8 +64,8 @@ export class AngularGoogleMapsComponent {
   }
 
   options: google.maps.MapOptions = {
-    center: {lat: 43.53247888148975, lng: -5.668391121179617},
-    zoom: 12
+    center: {lat: merchants.coords.lat, lng: merchants.coords.lng},
+    zoom: merchants.coords.zoom
   };
 
   circles: IMapCircle[] = []

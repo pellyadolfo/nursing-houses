@@ -7,7 +7,6 @@ import { MessageModule } from 'primeng/message';
 import { CommonModule } from '@angular/common';
 import { AngularGoogleMapsComponent } from './maps/maps.component';
 import { ListboxModule } from 'primeng/listbox';
-import { MenuItem, SelectItemGroup } from 'primeng/api';
 import { SplitterModule } from 'primeng/splitter';
 import { MenubarModule } from 'primeng/menubar';
 
@@ -17,18 +16,21 @@ import { PanelModule } from 'primeng/panel';
 import { SelectChangeEvent, SelectModule } from 'primeng/select';
 import { DataImportsService } from '../../services/dataImportsService';
 
+interface Coords {
+	lat: number;
+  lng: number;
+	zoom: number;
+}
 interface Service {
   name: string;
   code: string;
 	inactive: boolean;
 }
-
 interface City {
   name: string;
   code: string;
 	inactive: boolean;
 }
-
 interface Country {
   name: string;
   code: string;
@@ -43,28 +45,26 @@ interface Country {
   imports: [CommonModule, RouterOutlet, InputTextModule, ButtonModule, MessageModule, FormsModule, AngularGoogleMapsComponent, ListboxModule, SplitterModule, MenubarModule, ScrollPanelModule, PanelModule, SelectModule],
 })
 export class SearchPage {
-  text = '';
-  msg = '';
 
   services: Service[];
 	selectedServiceCode = 'RE';
 
   cities: City[];
 	selectedCityCode = 'GI';
-	//selectedCity: City;
 
   countries: Country[];
 	selectedCountryCode = 'ES';
-	selectedCountries: any[];
 
   merchants: any[];
-
-  groupedCities: SelectItemGroup[];
-
+  coords: Coords;
 
 	desktop: boolean = true;
 
   constructor(private dataImportsService: DataImportsService) {
+
+		if (document.documentElement.clientWidth < 400) {
+			this.desktop = false;
+		}
 
 		this.services = [
       { name: "Residencias", code: "RE", inactive: false },
@@ -72,7 +72,6 @@ export class SearchPage {
       { name: "Asistencia a Mayores", code: "AM", inactive: true },
       { name: "Asistencia a Domicilio", code: "AD", inactive: true },
     ];
-
     this.countries = [
       { name: "Australia", code: "AU", inactive: true },
       { name: "Brazil", code: "BR", inactive: true },
@@ -103,7 +102,6 @@ export class SearchPage {
 			{ name: "Tokelau", code: "TK", inactive: true}, 
 			{ name: "Tonga", code: "TO", inactive: true}, 
 		];
-
     this.cities = [
       { name: "Oviedo", code: "OV", inactive: true },
       { name: "Gijón", code: "GI", inactive: false },
@@ -112,60 +110,18 @@ export class SearchPage {
       { name: "Luanco", code: "LU", inactive: true }
     ];
 
-		//this.selectedCity;
-		this.selectedCountries = []
-
-    this.groupedCities = [
-      {
-        label: "Germany",
-        value: "de",
-        items: [
-          { label: "Berlin", value: "Berlin" },
-          { label: "Frankfurt", value: "Frankfurt" },
-          { label: "Hamburg", value: "Hamburg" },
-          { label: "Munich", value: "Munich" }
-        ]
-      },
-      {
-        label: "USA",
-        value: "us",
-        items: [
-          { label: "Chicago", value: "Chicago" },
-          { label: "Los Angeles", value: "Los Angeles" },
-          { label: "New York", value: "New York" },
-          { label: "San Francisco", value: "San Francisco" }
-        ]
-      },
-      {
-        label: "Japan",
-        value: "jp",
-        items: [
-          { label: "Kyoto", value: "Kyoto" },
-          { label: "Osaka", value: "Osaka" },
-          { label: "Tokyo", value: "Tokyo" },
-          { label: "Yokohama", value: "Yokohama" }
-        ]
-      }
-    ];
-
 		this.merchants = merchants_ES_GI.RES;
-
-		if (document.documentElement.clientWidth < 400) { // 768px portrait
-			this.desktop = false;
-		}
-  }
+		this.coords = merchants_ES_GI.coords;
+	}
 
 	onChange(event: SelectChangeEvent) {
     console.log(this.selectedCountryCode);
     console.log(this.selectedCityCode);
 
 		this.dataImportsService.loadData(this.selectedCountryCode, this.selectedCityCode).then(result => {
-			this.merchants = result;
+			this.merchants = result.RES;
+			this.coords = result.coords;
 		})
 	}
-
-  onClick() {
-    this.msg = 'Welcome ' + this.text;
-  }
 
 }

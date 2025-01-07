@@ -8,10 +8,7 @@ import { MenubarModule } from 'primeng/menubar';
 	templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 	standalone: true,
-  imports: [
-		MenubarModule, 
-		RouterModule,
-	],
+  imports: [ MenubarModule, RouterModule,	],
 })
 export class AppComponent {
 

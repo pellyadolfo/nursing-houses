@@ -5,7 +5,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { MessageModule } from 'primeng/message';
 import { CommonModule } from '@angular/common';
-import { AngularGoogleMapsComponent } from '../maps/maps.component';
+import { AngularGoogleMapsComponent } from './features/maps/maps.component';
 import { ListboxModule } from 'primeng/listbox';
 import { MenuItem, SelectItemGroup } from 'primeng/api';
 import { SplitterModule } from 'primeng/splitter';
@@ -15,7 +15,7 @@ import merchants_ES_GI from '../assets/ES_GI.json';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { PanelModule } from 'primeng/panel';
 import { SelectChangeEvent, SelectModule } from 'primeng/select';
-import { DataImportsService } from '../services/dataImportsService';
+import { DataImportsService } from './services/dataImportsService';
 
 interface Service {
   name: string;
@@ -160,7 +160,7 @@ export class AppComponent {
     console.log(this.selectedCountryCode);
     console.log(this.selectedCityCode);
 
-		this.dataImportsService.loadChildren(this.selectedCountryCode, this.selectedCityCode).then( result => {
+		this.dataImportsService.loadData(this.selectedCountryCode, this.selectedCityCode).then(result => {
 			this.merchants = result;
 		})
 	}

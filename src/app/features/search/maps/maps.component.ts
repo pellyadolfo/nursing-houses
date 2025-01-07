@@ -1,6 +1,6 @@
 import {Component, QueryList, ViewChildren} from '@angular/core';
 import {GoogleMap, MapCircle, MapInfoWindow, MapMarker} from "@angular/google-maps";
-import merchants from '../../../assets/ES_GI.json';
+import merchants from '../../../../assets/ES_GI.json';
 
 interface IMapCircleOptions{
   fillColor: string;

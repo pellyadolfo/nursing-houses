@@ -75,32 +75,13 @@ export class SearchPage {
     this.countries = [
       { name: "Australia", code: "AU", inactive: true },
       { name: "Brazil", code: "BR", inactive: true },
-      { name: "China", code: "CN", inactive: true },
-      { name: "Egypt", code: "EG", inactive: true },
       { name: "España", code: "ES", inactive: false },
       { name: "France", code: "FR", inactive: true },
       { name: "Germany", code: "DE", inactive: true },
-      { name: "India", code: "IN", inactive: true },
       { name: "Japan", code: "JP", inactive: true },
       { name: "United States", code: "US", inactive: true },
-			{ name: "South Africa", code: "ZA", inactive: true }, 
-			{ name: "South Georgia and the South Sandwich Islands", code: "GS", inactive: true}, 
-			{ name: "Sri Lanka", code: "LK", inactive: true}, 
-			{ name: "Sudan", code: "SD", inactive: true}, 
-			{ name: "Suriname", code: "SR", inactive: true}, 
-			{ name: "Svalbard and Jan Mayen", code: "SJ", inactive: true}, 
-			{ name: "Swaziland", code: "SZ", inactive: true}, 
 			{ name: "Sweden", code: "SE", inactive: true}, 
 			{ name: "Switzerland", code: "CH", inactive: true}, 
-			{ name: "Syrian Arab Republic", code: "SY", inactive: true}, 
-			{ name: "Taiwan, Republic of China", code: "TW", inactive: true}, 
-			{ name: "Tajikistan", code: "TJ", inactive: true}, 
-			{ name: "Tanzania, United Republic of", code: "TZ", inactive: true}, 
-			{ name: "Thailand", code: "TH", inactive: true}, 
-			{ name: "Timor-Leste", code: "TL", inactive: true},
-			{ name: "Togo", code: "TG", inactive: true}, 
-			{ name: "Tokelau", code: "TK", inactive: true}, 
-			{ name: "Tonga", code: "TO", inactive: true}, 
 		];
     this.cities = [
       { name: "Oviedo", code: "OV", inactive: true },
@@ -121,6 +102,7 @@ export class SearchPage {
 		this.dataImportsService.loadData(this.selectedCountryCode, this.selectedCityCode).then(result => {
 			this.merchants = result.RES;
 			this.coords = result.coords;
+			console.log(result.coords);
 		})
 	}
 

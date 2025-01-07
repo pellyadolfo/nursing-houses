@@ -1,5 +1,5 @@
 { 
-	"coords" : {"lat": 43.53247888148975, "lng": -5.668391121179617, "zoom": 12},
+	"coords" : {"lat": 43.5578054707177, "lng": -5.917110318188171, "zoom": 13},
 	"RES" : [
 		{"name": "Residencia Santa Teresa Jornet", "num": "220", "price": "", "address":"La Sablera 37 - San Cristobal, 33400 Avilés", "web": "https://www.hermanitas.net/", "coords": "-5.93687700, 43.56477800", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6m3APd48Jka0Zq6JbPS8imAGd0QMT6RhXrQ&s", "desc": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."},
 		{"name": "Hermanitas De Los Ancianos Desamparados", "num": "220", "price": "", "address":"La Sablera 5 - San Cristobal, 33400 Avilés", "web": "https://www.hermanitas.net/", "coords": "-5.93797560, 43.56599820", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6m3APd48Jka0Zq6JbPS8imAGd0QMT6RhXrQ&s", "desc": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."},

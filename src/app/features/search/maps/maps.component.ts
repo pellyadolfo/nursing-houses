@@ -1,7 +1,11 @@
-import {Component, QueryList, ViewChildren} from '@angular/core';
+import {Component, Input, QueryList, ViewChildren} from '@angular/core';
 import {GoogleMap, MapCircle, MapInfoWindow, MapMarker} from "@angular/google-maps";
-import merchants from '../../../../assets/ES_GI.json';
 
+interface Coords {
+	lat: number;
+  lng: number;
+	zoom: number;
+}
 interface IMapCircleOptions{
   fillColor: string;
   fillOpacity: number;
@@ -45,30 +49,34 @@ interface IMapMarker{
   styleUrl: './maps.component.scss'
 })
 export class AngularGoogleMapsComponent {
+
+	@Input('merchantsCopy') merchantsCopy!: any[];
+	@Input('coordsCopy') coordsCopy!: Coords;
+
   @ViewChildren(MapInfoWindow) infoWindows!: QueryList<MapInfoWindow>;
 
-	merchants: any[];
+	options: google.maps.MapOptions = {};
+  circles: IMapCircle[] = [];
 
-	constructor() {
-		this.merchants = merchants.RES;
+	ngOnInit() {
+		this.reloadData();
+  }
+	ngOnChanges(changes: any) {
+		this.reloadData();
 	}
-  ngOnInit() {
-		this.merchants.forEach(merchants => {
+	reloadData() {
+		this.merchantsCopy.forEach(merchants => {
 			const coords = merchants.coords.split(',');
 			const lat = parseFloat(coords[0]);
 			const lng = parseFloat(coords[1]);
-			//console.log("lat", lat)
-			//console.log("lng", lng)
 			this.addMarker(lng, lat, merchants);
 		});
-  }
 
-  options: google.maps.MapOptions = {
-    center: {lat: merchants.coords.lat, lng: merchants.coords.lng},
-    zoom: merchants.coords.zoom
-  };
-
-  circles: IMapCircle[] = []
+		this.options = {
+			center: {lat: this.coordsCopy.lat, lng: this.coordsCopy.lng},
+			zoom: this.coordsCopy.zoom,
+		};
+	}
 
   clickMap(event: google.maps.MapMouseEvent) {
 		// do nothing

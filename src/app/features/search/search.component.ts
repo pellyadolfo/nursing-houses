@@ -15,6 +15,7 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { PanelModule } from 'primeng/panel';
 import { SelectChangeEvent, SelectModule } from 'primeng/select';
 import { DataImportsService } from '../../services/dataImportsService';
+import { FiltersComponent } from './filters/filters.component';
 
 interface Coords {
 	lat: number;
@@ -42,7 +43,7 @@ interface Country {
   templateUrl: './search.component.html',
   styleUrl: './search.component.scss',
 	standalone: true,
-  imports: [CommonModule, RouterOutlet, InputTextModule, ButtonModule, MessageModule, FormsModule, AngularGoogleMapsComponent, ListboxModule, SplitterModule, MenubarModule, ScrollPanelModule, PanelModule, SelectModule],
+  imports: [CommonModule, RouterOutlet, InputTextModule, ButtonModule, MessageModule, FormsModule, AngularGoogleMapsComponent, ListboxModule, SplitterModule, MenubarModule, ScrollPanelModule, PanelModule, SelectModule, FiltersComponent],
 })
 export class SearchPage {
 

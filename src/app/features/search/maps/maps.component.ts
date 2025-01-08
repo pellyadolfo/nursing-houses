@@ -1,4 +1,4 @@
-import {Component, Input, QueryList, ViewChildren} from '@angular/core';
+import {Component, Input, QueryList, ViewChild, ViewChildren} from '@angular/core';
 import {GoogleMap, MapCircle, MapInfoWindow, MapMarker} from "@angular/google-maps";
 
 interface Coords {
@@ -54,8 +54,10 @@ export class AngularGoogleMapsComponent {
 	@Input('merchantsCopy') merchantsCopy!: any[];
 	@Input('coordsCopy') coordsCopy!: Coords;
 
+	@ViewChild(GoogleMap) googleMap!: GoogleMap;
   @ViewChildren(MapInfoWindow) infoWindows!: QueryList<MapInfoWindow>;
 
+	bounds: any;
 	options: google.maps.MapOptions = {};
   circles: IMapCircle[] = [];
 
@@ -66,23 +68,33 @@ export class AngularGoogleMapsComponent {
 		this.reloadData();
 	}
 	reloadData() {
+
+		let north: number = 99999;
+		let south: number = 0;
+		let east: number = 0;
+		let west: number = 99999;
+
 		this.merchantsCopy.forEach(merchant => {
+			// add marker
 			const coords = merchant.coords.split(',');
 			const lat = parseFloat(coords[0]);
 			const lng = parseFloat(coords[1]);
 			this.addMarker(lng, lat, merchant);
+
+			// recalculate bounds
+			north = north !== undefined ? Math.max(north, lat) : lat;
+			south = south !== undefined ? Math.min(south, lat) : lat;
+			east = east !== undefined ? Math.max(east, lng) : lng;
+			west = west !== undefined ? Math.min(west, lng) : lng;
 		});
 
 		this.options = {
 			center: {lat: this.coordsCopy.lat, lng: this.coordsCopy.lng},
 			zoom: this.coordsCopy.zoom,
 		};
+
+		this.bounds = { north, south, east, west };
 	}
-
-  clickMap(event: google.maps.MapMouseEvent) {
-		// do nothing
-  }
-
   addMarker(lat: any, lng: any, merchant: any) {
     this.circles.push({
       id: this.circles.length + 1,
@@ -113,7 +125,15 @@ export class AngularGoogleMapsComponent {
       }
     } as IMapCircle);
   }
+	ngAfterViewInit() {
+		// map available on ngAfterViewInit
+		console.log("googleMap bounds", this.bounds);
+		this.googleMap.googleMap?.fitBounds(this.bounds);
+	}
 
+  clickMap(event: google.maps.MapMouseEvent) {
+		// do nothing
+  }
   openMarkerInfoWindow(marker: MapMarker, markerIndex: number) {
     this.infoWindows.forEach((infoWindow: MapInfoWindow, index: number ) => {
       if (index === markerIndex) {

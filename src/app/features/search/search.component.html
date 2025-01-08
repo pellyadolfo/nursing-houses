@@ -131,7 +131,7 @@
 				<div class="row row-cols-2 g-3">
 
 					<div class="col-12 col-sm-6 col-md-4" *ngFor="let merchant of merchants">
-						<div class="card h-100">
+						<div class="card h-100" (mouseover)='over()' (mouseout)='out()' id="RES_{{merchant.id}}">
 							<img [src]="merchant.image" class="card-img-top" [alt]="merchant.name"/>
 							<div class="card-body">
 								<h5 class="card-title"><a [href]="merchant.web" target="_blank">{{merchant.name}}</a></h5>

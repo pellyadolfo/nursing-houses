@@ -34,6 +34,7 @@ interface IMapMarker{
     className: string;
     fontSize: string;
   };
+	id: string,
 }
 
 @Component({
@@ -65,11 +66,11 @@ export class AngularGoogleMapsComponent {
 		this.reloadData();
 	}
 	reloadData() {
-		this.merchantsCopy.forEach(merchants => {
-			const coords = merchants.coords.split(',');
+		this.merchantsCopy.forEach(merchant => {
+			const coords = merchant.coords.split(',');
 			const lat = parseFloat(coords[0]);
 			const lng = parseFloat(coords[1]);
-			this.addMarker(lng, lat, merchants);
+			this.addMarker(lng, lat, merchant);
 		});
 
 		this.options = {
@@ -98,13 +99,14 @@ export class AngularGoogleMapsComponent {
         radius: 10 // in meters
       },
       markerOptions: {
+				id: "MK_" + merchant.id,
         lat: lat,
         lng: lng,
         label: {
           text: merchant.num,
           className: 'circle-label',
           fontSize: '12px'
-        }
+        },
       },
       markerWindowInfo: {
         html: '<div><a href=\"' + merchant.web + '\" target=\"_blank\">' + merchant.name + '</a></div>'
@@ -120,6 +122,12 @@ export class AngularGoogleMapsComponent {
         infoWindow.close();
       }
     });
+  }
+
+	mouseOverMarker(marker: MapMarker) {
+    console.log('mouse over marker', marker);
+    console.log('mouse over marker', marker.options);
+    console.log('mouse over marker', marker.marker);
   }
 
 }

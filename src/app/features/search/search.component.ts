@@ -106,4 +106,11 @@ export class SearchPage {
 		})
 	}
 
+	over(){
+    console.log("Mouseover called");
+  }
+	out(){
+    console.log("Mouseout called");
+  }
+
 }

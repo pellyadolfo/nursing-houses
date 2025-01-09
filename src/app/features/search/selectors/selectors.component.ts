@@ -42,7 +42,7 @@ export class SelectorsComponent {
 
 		this.services = [
       { name: "Residencias", code: "RE", inactive: false },
-      { name: "Centros de Dia", code: "CD", inactive: true },
+      { name: "Centros de Dia", code: "CD", inactive: false },
       { name: "Asistencia a Mayores", code: "AM", inactive: true },
       { name: "Asistencia a Domicilio", code: "AD", inactive: true },
     ];

@@ -74,6 +74,7 @@ export class AngularGoogleMapsComponent {
 		let east: number = 0;
 		let west: number = 99999;
 
+		this.circles = [];
 		this.merchantsCopy.forEach(merchant => {
 			// add marker
 			const coords = merchant.coords.split(',');

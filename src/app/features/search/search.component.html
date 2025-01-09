@@ -31,26 +31,11 @@
 
 	<ng-template pTemplate>
 
-		<p-scrollpanel [style]="{ height: 'calc(100vh - 110px)' }">
+		<p-scrollpanel #scrollpanel [style]="{ height: 'calc(100vh - 110px)' }">
 
 			<p-panel>
-
-				<div class="container mb-4">
-					<div class="row">
-						<div class="col">
-							<p-select [options]="services" [(ngModel)]="selectedServiceCode" optionLabel="name" optionValue="code" class="w-100 mb-2" optionDisabled="inactive" (onChange)="onChange($event)"></p-select>
-						</div>
-						<div class="col">
-							<p-select [options]="countries" [(ngModel)]="selectedCountryCode" optionLabel="name" optionValue="code" class="w-100 mb-2" optionDisabled="inactive" (onChange)="onChange($event)"></p-select>
-						</div>
-						<div class="col">
-							<p-select [options]="cities" [(ngModel)]="selectedCityCode" optionLabel="name" optionValue="code" class="w-100 mb-2" optionDisabled="inactive" (onChange)="onChange($event)"></p-select>
-						</div>
-					</div>
-				</div>
-
+				<selectors-panel (onChangeEvent)="onChange($event)"></selectors-panel>
 				<filters-panel></filters-panel>
-
 			</p-panel>
 			
 			<div class="container">

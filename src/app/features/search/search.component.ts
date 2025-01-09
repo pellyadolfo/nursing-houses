@@ -69,7 +69,7 @@ export class SearchPage {
 
 		this.services = [
       { name: "Residencias", code: "RE", inactive: false },
-      { name: "Centros de Dia", code: "CD", inactive: true },
+      { name: "Centros de Dia", code: "CD", inactive: false },
       { name: "Asistencia a Mayores", code: "AM", inactive: true },
       { name: "Asistencia a Domicilio", code: "AD", inactive: true },
     ];
@@ -101,7 +101,12 @@ export class SearchPage {
     console.log(this.selectedCityCode);
 
 		this.dataImportsService.loadData(this.selectedCountryCode, this.selectedCityCode).then(result => {
-			this.merchants = result.RES;
+
+			if (this.selectedServiceCode === 'RE')
+				this.merchants = result.RES;
+			else if (this.selectedServiceCode === 'CD')
+				this.merchants = result.CD;
+
 			this.coords = result.coords;
 			console.log(result.coords);
 		})

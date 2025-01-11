@@ -44,7 +44,7 @@ export class SelectorsComponent {
       { name: "Residencias", code: "RE", inactive: false },
       { name: "Centros de Dia", code: "CD", inactive: false },
       { name: "Asistencia a Mayores", code: "AM", inactive: true },
-      { name: "Asistencia a Domicilio", code: "AD", inactive: true },
+      { name: "Asistencia a Domicilio", code: "AD", inactive: false },
     ];
     this.countries = [
       { name: "Australia", code: "AU", inactive: true },

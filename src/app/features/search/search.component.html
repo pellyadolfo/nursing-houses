@@ -42,12 +42,12 @@
 				<div class="row row-cols-2 g-3">
 
 					<div class="col-12 col-sm-6 col-md-4" *ngFor="let merchant of merchants">
-						<div class="card h-100" (mouseover)='over()' (mouseout)='out()' id="RES_{{merchant.id}}">
+						<div class="card h-100" (mouseover)='overListItem()' (mouseout)='outListItem()' id="RES_{{merchant.id}}">
 							<img [src]="merchant.image" class="card-img-top" [alt]="merchant.name"/>
 							<div class="card-body">
 								<h5 class="card-title"><a [href]="merchant.web" target="_blank">{{merchant.name}}</a></h5>
 								<p>{{merchant.address}}</p>
-								<p>{{merchant.num}} Plazas</p>
+								<p *ngIf="merchant.num">{{merchant.num}} Plazas</p>
 								<p *ngIf="merchant.price">Desde {{merchant.price}} €</p>
 								<!--p class="card-text">{{merchant.desc}}</p-->
 							</div>
@@ -62,7 +62,7 @@
 
 	<ng-template pTemplate *ngIf="desktop">
 		<div class="map">
-			<app-angular-google-maps [merchantsCopy]="merchants" [coordsCopy]="coords"></app-angular-google-maps>
+			<app-angular-google-maps [merchantsCopy]="merchants" [coordsCopy]="coords" (onMakerOverEvent)="onMarkerOver($event)" (onMakerOutEvent)="onMarkerOut($event)"></app-angular-google-maps>
 		</div>
 	</ng-template>
 

@@ -1,4 +1,4 @@
-import {Component, Input, QueryList, ViewChild, ViewChildren} from '@angular/core';
+import {Component, EventEmitter, Input, Output, QueryList, ViewChild, ViewChildren} from '@angular/core';
 import {GoogleMap, MapCircle, MapInfoWindow, MapMarker} from "@angular/google-maps";
 
 interface Coords {
@@ -53,6 +53,9 @@ export class AngularGoogleMapsComponent {
 
 	@Input('merchantsCopy') merchantsCopy!: any[];
 	@Input('coordsCopy') coordsCopy!: Coords;
+
+	@Output() onMakerOverEvent = new EventEmitter<MapMarker>();
+	@Output() onMakerOutEvent = new EventEmitter<MapMarker>();
 
 	@ViewChild(GoogleMap) googleMap!: GoogleMap;
   @ViewChildren(MapInfoWindow) infoWindows!: QueryList<MapInfoWindow>;
@@ -145,10 +148,12 @@ export class AngularGoogleMapsComponent {
     });
   }
 
+	// emit marker events
 	mouseOverMarker(marker: MapMarker) {
-    console.log('mouse over marker', marker);
-    console.log('mouse over marker', marker.options);
-    console.log('mouse over marker', marker.marker);
+		this.onMakerOverEvent.emit(marker);
+  }
+	mouseOutMarker(marker: MapMarker) {
+		this.onMakerOutEvent.emit(marker);
   }
 
 }

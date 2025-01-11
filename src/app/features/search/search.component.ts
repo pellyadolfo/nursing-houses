@@ -13,6 +13,7 @@ import { PanelModule } from 'primeng/panel';
 import { DataImportsService } from '../../services/dataImportsService';
 import { FiltersComponent } from './filters/filters.component';
 import { SelectorsComponent } from './selectors/selectors.component';
+import { MapMarker } from '@angular/google-maps';
 
 interface Coords {
 	lat: number;
@@ -56,17 +57,29 @@ export class SearchPage {
 				this.merchants = result.RES;
 			else if (this.selectors.selectedServiceCode === 'CD')
 				this.merchants = result.CD;
+			else if (this.selectors.selectedServiceCode === 'AD')
+				this.merchants = result.AD;
 
 			this.coords = result.coords;
 			console.log(result.coords);
 		})
 	}
 
-	over(){
-    console.log("Mouseover called");
+	// list hover events
+	overListItem(){
+    console.log("Mouseover ListItem called");
   }
-	out(){
-    console.log("Mouseout called");
+	outListItem(){
+    console.log("Mouseout ListItem called");
   }
+
+	// marker over events
+	onMarkerOver(marker: MapMarker) {
+    console.log("Mouseover Marker Over", marker);
+	}
+	onMarkerOut(marker: MapMarker) {
+    console.log("Mouseover Marker Out", marker);
+	}
+
 
 }

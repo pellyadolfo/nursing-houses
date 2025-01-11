@@ -59,5 +59,7 @@
 		{"id": "14", "name": "Centro de día y Rehabilitación Vitalastur", "num": "75", "price": "800", "address":"C/ Marqués de Casa Valdés 17-19. 33202 Gijón", "web": "https://www.vitalastur.com/", "coords": "-5.65722070, 43.54052110", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6m3APd48Jka0Zq6JbPS8imAGd0QMT6RhXrQ&s", "desc": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."}
 	],
 	"AM": [],
-	"AD": []
+	"AD": [
+		{"id": "41", "name": "Mayores y Mas", "num": "", "price": "", "address":"C/ Cataluña 233208, Gijón (Asturias)", "web": "https://www.mayoresymas.es/", "coords": "-5.6717444, 43.5300898", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6m3APd48Jka0Zq6JbPS8imAGd0QMT6RhXrQ&s", "desc": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."}
+	]
 }

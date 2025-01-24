@@ -43,6 +43,7 @@ export class SearchPage {
 			this.desktop = false;
 		}
 
+		// https://cuernavaca.infoisinfo.com.mx/busqueda/asilo
 		this.merchants = merchants_ES_GI.RES;
 		this.coords = merchants_ES_GI.coords;
 	}

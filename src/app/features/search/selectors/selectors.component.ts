@@ -2,6 +2,8 @@ import { Component, EventEmitter, Output } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { SelectChangeEvent, SelectModule } from "primeng/select";
 
+import countries from '../../../../assets/countries.json'
+
 interface Service {
   name: string;
   code: string;
@@ -46,32 +48,29 @@ export class SelectorsComponent {
       { name: "Asistencia a Mayores", code: "AM", inactive: true },
       { name: "Asistencia a Domicilio", code: "AD", inactive: false },
     ];
-    this.countries = [
-      { name: "Australia", code: "AU", inactive: true },
-      { name: "Brazil", code: "BR", inactive: true },
-      { name: "España", code: "ES", inactive: false },
-      { name: "México", code: "MX", inactive: false },
-      { name: "France", code: "FR", inactive: true },
-      { name: "Germany", code: "DE", inactive: true },
-      { name: "Japan", code: "JP", inactive: true },
-      { name: "United States", code: "US", inactive: true },
-			{ name: "Sweden", code: "SE", inactive: true}, 
-			{ name: "Switzerland", code: "CH", inactive: true}, 
-		];
-    this.cities = [
-      { name: "Oviedo", code: "OV", inactive: true },
-      { name: "Gijón", code: "GI", inactive: false },
-      { name: "Avilés", code: "AV", inactive: false },
-      { name: "Nava", code: "NA", inactive: true },
-      { name: "Luanco", code: "LU", inactive: true },
-      { name: "Cuernavaca", code: "CV", inactive: false }
-    ];
+    
+		this.countries = countries;
+		
+		this.cities = this.preselectCountry('ES');
+	}
+
+	preselectCountry(code: string) {
+		return countries.filter(function(item){ return item.code == code; })[0].cities;
+	}
+
+	selectCountry(event: SelectChangeEvent) {
+		this.cities = countries.filter(function(item){ return item.code == event.value; })[0].cities;
+		this.selectedCountryCode = event.value;
+		this.selectedCityCode = this.cities.filter(function(item){ return item.inactive == false; })[0].code;
+
+		this.onChange(event);
 	}
 
 	onChange(event: SelectChangeEvent) {
     console.log("on change in child");
-    console.log(this.selectedCountryCode);
-    console.log(this.selectedCityCode);
+    console.log("on change in child", event);
+    console.log('selectedCountryCode', this.selectedCountryCode);
+    console.log('selectedCityCode', this.selectedCityCode);
 
 		this.onChangeEvent.emit(true);
 	}

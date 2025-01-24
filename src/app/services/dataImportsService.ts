@@ -10,6 +10,8 @@ export class DataImportsService {
 			return import('../../assets/ES_GI.json').then(m=> m)
 		else if (country === 'ES' && city === 'AV')
 			return import('../../assets/ES_AV.json').then(m=> m)
+		else if (country === 'MX' && city === 'CV')
+			return import('../../assets/MX_CV.json').then(m=> m)
 
 		return import('../../assets/ES_GI.json').then(m=> m)
 	} 

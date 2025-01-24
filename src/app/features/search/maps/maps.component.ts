@@ -99,6 +99,7 @@ export class AngularGoogleMapsComponent {
 
 		this.bounds = { north, south, east, west };
 	}
+	// https://spatialized.io/advanced-google-maps-markers-definitive-guide-94c5a070615e436ab0a255b9f5100a88
   addMarker(lat: any, lng: any, merchant: any) {
     this.circles.push({
       id: this.circles.length + 1,

@@ -47,8 +47,11 @@
 							<div class="card-body">
 								<h5 class="card-title"><a [href]="merchant.web" target="_blank">{{merchant.name}}</a></h5>
 								<p>{{merchant.address}}</p>
-								<p *ngIf="merchant.num">{{merchant.num}} Plazas</p>
-								<p *ngIf="merchant.price">Desde {{merchant.price}} €</p>
+								<p>
+									<span *ngIf="merchant.num">{{merchant.num}} Plazas </span>
+									<span *ngIf="merchant.num && merchant.price"> • </span>
+									<span *ngIf="merchant.price"> Desde {{merchant.price}} €</span>
+								</p>
 								<!--p class="card-text">{{merchant.desc}}</p-->
 							</div>
 						</div>

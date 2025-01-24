@@ -50,6 +50,7 @@ export class SelectorsComponent {
       { name: "Australia", code: "AU", inactive: true },
       { name: "Brazil", code: "BR", inactive: true },
       { name: "España", code: "ES", inactive: false },
+      { name: "México", code: "MX", inactive: false },
       { name: "France", code: "FR", inactive: true },
       { name: "Germany", code: "DE", inactive: true },
       { name: "Japan", code: "JP", inactive: true },
@@ -62,14 +63,13 @@ export class SelectorsComponent {
       { name: "Gijón", code: "GI", inactive: false },
       { name: "Avilés", code: "AV", inactive: false },
       { name: "Nava", code: "NA", inactive: true },
-      { name: "Luanco", code: "LU", inactive: true }
+      { name: "Luanco", code: "LU", inactive: true },
+      { name: "Cuernavaca", code: "CV", inactive: false }
     ];
 	}
 
 	onChange(event: SelectChangeEvent) {
     console.log("on change in child");
-    console.log(this.selectedCountryCode);
-    console.log(this.selectedCityCode);
     console.log(this.selectedCountryCode);
     console.log(this.selectedCityCode);
 

@@ -119,6 +119,7 @@ export class AngularGoogleMapsComponent {
 				id: "MK_" + merchant.id,
         lat: lat,
         lng: lng,
+				icon: "https://maps.gstatic.com/mapfiles/ms2/micons/lodging.png",
         label: {
           text: merchant.num.length > 0 ? merchant.num : '-',
           className: 'circle-label',

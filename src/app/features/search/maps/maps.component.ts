@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, Output, QueryList, ViewChild, ViewChildren} from '@angular/core';
 import {GoogleMap, MapCircle, MapInfoWindow, MapMarker} from "@angular/google-maps";
+import { SelectorsComponent } from '../selectors/selectors.component';
 
 interface Coords {
 	lat: number;
@@ -51,8 +52,9 @@ interface IMapMarker{
 })
 export class AngularGoogleMapsComponent {
 
-	@Input('merchantsCopy') merchantsCopy!: any[];
 	@Input('coordsCopy') coordsCopy!: Coords;
+	@Input('merchantsCopy') merchantsCopy!: any[];
+	@Input('selectorsCopy') selectorsCopy!: SelectorsComponent;
 
 	@Output() onMakerOverEvent = new EventEmitter<MapMarker>();
 	@Output() onMakerOutEvent = new EventEmitter<MapMarker>();
@@ -119,7 +121,12 @@ export class AngularGoogleMapsComponent {
 				id: "MK_" + merchant.id,
         lat: lat,
         lng: lng,
-				icon: "https://maps.gstatic.com/mapfiles/ms2/micons/lodging.png",
+				// https://stackoverflow.com/questions/8248077/google-maps-v3-standard-icon-shadow-names-equiv-of-g-default-icon-in-v2
+				icon: this.selectorsCopy.selectedServiceCode == 'RE' ? "https://maps.gstatic.com/mapfiles/ms2/micons/lodging.png" :
+							this.selectorsCopy.selectedServiceCode == 'CD' ? "https://maps.gstatic.com/mapfiles/ms2/micons/sunny.png" :
+							this.selectorsCopy.selectedServiceCode == 'AM' ? "https://maps.gstatic.com/mapfiles/ms2/micons/homegardenbusiness.png" :
+							this.selectorsCopy.selectedServiceCode == 'AD' ? "https://maps.gstatic.com/mapfiles/ms2/micons/homegardenbusiness.png" :
+							"",
         label: {
           text: merchant.num.length > 0 ? merchant.num : '-',
           className: 'circle-label',

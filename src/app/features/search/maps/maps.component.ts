@@ -120,7 +120,7 @@ export class AngularGoogleMapsComponent {
         lat: lat,
         lng: lng,
         label: {
-          text: merchant.num,
+          text: merchant.num.length > 0 ? merchant.num : '-',
           className: 'circle-label',
           fontSize: '12px'
         },

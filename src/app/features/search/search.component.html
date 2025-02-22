@@ -52,7 +52,7 @@
 								</div>
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-										<img [src]="merchant.image" class="d-block w-100" [alt]="merchant.name">
+										<img [src]="merchant.image ? merchant.image : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6m3APd48Jka0Zq6JbPS8imAGd0QMT6RhXrQ&s'" class="d-block w-100" [alt]="merchant.name">
 									</div>
 									<div class="carousel-item">
 										<img [src]="merchant.image" class="d-block w-100" [alt]="merchant.name">

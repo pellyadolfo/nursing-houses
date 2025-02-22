@@ -57,7 +57,14 @@
 		{"id": "31", "name": "Centro de día El Lauredal", "num": "30", "price": "", "address":"Avenida del Cerillero, 11. La Calzada 33213 Gijón", "web": "http://gcostaverde.com/", "coords": "-5.70863218, 43.54325398", "image": ""},
 		{"id": "32", "name": "Centro de día Sonraiz", "num": "30", "price": "946", "address":"Camino del Cortijo, 11 Bajo Derecha. 33212 Gijón", "web": "https://centrodediasonraiz.com/", "coords": "-5.68849030, 43.53819130", "image": ""},
 		{"id": "14", "name": "Centro de día y Rehabilitación Vitalastur", "num": "75", "price": "800", "address":"C/ Marqués de Casa Valdés 17-19. 33202 Gijón", "web": "https://www.vitalastur.com/", "coords": "-5.65722070, 43.54052110", "image": ""},
-		{"id": "30", "name": "Centro de día Jovellanos", "num": "", "price": "", "address":"", "web": "", "coords": "", "image": ""}
+		{"id": "30", "name": "Centro De Día CK Jovellanos", "num": "", "price": "", "address":"Calle Muros de Galicia, 3, 33204 Gijón, Asturias, Spain", "web": "https://cksenior.es/centros/centro-dia-ck-jovellanos/", "coords": "-5.649665566263508, 43.529805032325", "image": ""},
+		{"id": "30", "name": "Centro De Día Montevil", "num": "", "price": "", "address":"Carr. de la Carbonera, 75, 33211 Gijón, Asturias, Spain", "web": "https://www.facebook.com/profile.php?id=100078825563816", "coords": "-5.674321084022992, 43.51806907541481", "image": ""},
+		{"id": "30", "name": "Centro De Día Cpr Aurora Alvarez", "num": "31", "price": "1600", "address":"Calle de les Cigarreres, 24, 33211 Gijón, Asturias, Spain", "web": "", "coords": "-5.679796093252702, 43.52072946719234", "image": ""},
+		{"id": "30", "name": "Centro De Día Cpr Clara Ferrer", "num": "", "price": "", "address":"Lugar Puerto De Leitariegos, 1, 33207 Gijón, Spain", "web": "", "coords": "-5.673233213494595, 43.534156959406495", "image": ""},
+		{"id": "30", "name": "Centro De Día Cpr Mixta", "num": "", "price": "", "address":"Calle de San Nicolás, 47, 33210 Gijón, Asturias, Spain", "web": "", "coords": "-5.671169212858125, 43.52258007951195", "image": ""},
+		{"id": "30", "name": "Centro De Día Villa De Somió", "num": "19", "price": "", "address":"Cmo de la Gola, 25, 33203 Gijón, Asturias, Spain", "web": "https://residencialvilladesomio.com/", "coords": "-5.6217695, 43.53755323103695", "image": ""},
+		{"id": "30", "name": "Centro De Día Cimadevilla", "num": "", "price": "", "address":"C. San Bernardo, 31, 33201 Gijón, Asturias, Spain", "web": "https://laresasturias.org/centro/residencia-de-mayores-cimadevilla-gijon/", "coords": "-5.662887575172383, 43.54676018534858", "image": ""},
+		{"id": "30", "name": "Centro De Día Augusta Alzheimer", "num": "", "price": "", "address":"C. Caveda, 16, 33205 Gijón, Asturias, Spain", "web": "https://augusta-alzheimer.es/", "coords": "-5.662661633736491, 43.53604568918752", "image": ""}
 	],
 	"AM": [],
 	"AD": [

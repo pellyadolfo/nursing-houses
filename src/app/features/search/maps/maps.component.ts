@@ -83,8 +83,8 @@ export class AngularGoogleMapsComponent {
 		this.merchantsCopy.forEach(merchant => {
 			// add marker
 			const coords = merchant.coords.split(',');
-			const lat = parseFloat(coords[0]);
-			const lng = parseFloat(coords[1]);
+			const lng = parseFloat(coords[0]);
+			const lat = parseFloat(coords[1]);
 			this.addMarker(lng, lat, merchant);
 
 			// recalculate bounds

@@ -75,10 +75,12 @@
 								<h5 class="card-title"><a [href]="merchant.web" target="_blank">{{merchant.name}}</a></h5>
 								<p>{{merchant.address}}</p>
 								<p>
+									<span *ngIf="merchant.gob">Público</span>
+									<span *ngIf="merchant.gob && merchant.num"> • </span>
 									<span *ngIf="merchant.num">{{merchant.num}} Plazas </span>
 									<span *ngIf="merchant.num && merchant.price"> • </span>
 									<span *ngIf="merchant.price"> Desde {{merchant.price}} €</span>
-									<span *ngIf="merchant.num || merchant.price"> • </span>
+									<span *ngIf="merchant.gob || merchant.num || merchant.price"> • </span>
 									<span><a href="https://www.google.com/maps/search/?api=1&query={{merchant.coords}}" target="_blank">Mapa</a></span>
 								</p>
 								<!--p class="card-text">{{merchant.desc}}</p-->

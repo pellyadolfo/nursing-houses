@@ -28,8 +28,7 @@ export class AppComponent {
         ] 
       }, 
       { 
-        label: 'Angular', 
-  
+        label: 'Angular',
         items: [ 
           { 
             label: 'Angular 1'

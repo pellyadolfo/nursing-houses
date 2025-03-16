@@ -105,9 +105,9 @@
 								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
 								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
 								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
-								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
-								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
-								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
+								<div class="col"><i *ngIf="merchant.LE.GY" class="fa fa-bicycle" aria-hidden="true" title="Gym: {{merchant.LE.GY}}"></i></div>
+								<div class="col"><i *ngIf="merchant.LE.GM" class="fa fa-group" aria-hidden="true" title="Gym Monitor: {{merchant.LE.GM}}"></i></div>
+								<div class="col"><i *ngIf="merchant.LE.PO" class="fa fa-shower" aria-hidden="true" title="Piscina: {{merchant.LE.PO}}"></i></div>
 							</div>
 						</div>
 					</div>

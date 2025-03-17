@@ -135,6 +135,16 @@ export class AngularGoogleMapsComponent {
       },
       markerWindowInfo: {
         html: '<div><a href=\"' + merchant.web + '\" target=\"_blank\">' + merchant.name + '</a></div>'
+							+ '<div>' + merchant.address + '</div>'
+							+ '<p>'
+								+ (merchant.gob ? '<span>Público</span>' :  '')
+								+ (merchant.gob && merchant.num ? '<span> • </span>' : '')
+								+ (merchant.num ? '<span>' + merchant.num + ' Plazas</span>' :  '')
+								+ (merchant.num && merchant.price ? '<span> • </span>' : '')
+								+ (merchant.price && merchant.price ? '<span>Desde ' + merchant.price + '</span>' : '')
+								+ (merchant.gob && merchant.num && merchant.price ? '<span> • </span>' : '')
+								+ '<span> • <a href="https://www.google.com/maps/search/?api=1&query=' + merchant.coords + '" target="_blank">Mapa</a></span>'
+							+ '</p>'
       }
     } as IMapCircle);
   }

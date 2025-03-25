@@ -42,7 +42,7 @@
 				<div class="row row-cols-2 g-4">
 
 					<div class="col-12 col-sm-6 col-md-4" *ngFor="let merchant of merchants">
-						<div class="card h-100 card-score_{{ Math.floor(merchant.score) }}" (mouseover)='overListItem()' (mouseout)='outListItem()' id="RES_{{merchant.id}}">
+						<div class="card h-100 card-score_{{ merchant.score > 4.4 ? 5 : merchant.score > 4 ? 4 : merchant.score > 3.6 ? 3 :  merchant.score > 3 ? 2 : merchant.score > 0 ? 1 : 99 }}" (mouseover)='overListItem()' (mouseout)='outListItem()' id="RES_{{merchant.id}}">
 
 							<div id="carouselPhotos" class="carousel carousel-dark slide">
 								<div class="carousel-indicators">

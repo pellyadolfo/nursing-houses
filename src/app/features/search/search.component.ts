@@ -30,6 +30,8 @@ interface Coords {
 })
 export class SearchPage {
 
+	Math = Math; //explicitly bind the Math library so it's usable in template
+
 	@ViewChild(SelectorsComponent) selectors!: SelectorsComponent;
 
   merchants: any[];
@@ -52,18 +54,21 @@ export class SearchPage {
     console.log(this.selectors.selectedCountryCode);
     console.log(this.selectors.selectedCityCode);
 
-		this.dataImportsService.loadData(this.selectors.selectedCountryCode, this.selectors.selectedCityCode).then(result => {
+		this.dataImportsService
+				.loadData(this.selectors.selectedCountryCode, this.selectors.selectedCityCode)
+				.then(result => {
 
-			if (this.selectors.selectedServiceCode === 'RE')
-				this.merchants = result.RES;
-			else if (this.selectors.selectedServiceCode === 'CD')
-				this.merchants = result.CD;
-			else if (this.selectors.selectedServiceCode === 'AD')
-				this.merchants = result.AD;
+					if (this.selectors.selectedServiceCode === 'RE')
+						this.merchants = result.RES; //.sort((a,b) => a.score - b.score)
+					else if (this.selectors.selectedServiceCode === 'CD')
+						this.merchants = result.CD;
+					else if (this.selectors.selectedServiceCode === 'AD')
+						this.merchants = result.AD;
 
-			this.coords = result.coords;
-			console.log(result.coords);
-		})
+					this.coords = result.coords;
+					console.log(result.coords);
+					
+				})
 	}
 
 	// list hover events

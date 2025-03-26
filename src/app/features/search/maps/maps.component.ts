@@ -131,17 +131,18 @@ export class AngularGoogleMapsComponent {
 								this.selectorsCopy.selectedServiceCode == 'AD' ? "M1 6V15H6V11C6 9.89543 6.89543 9 8 9C9.10457 9 10 9.89543 10 11V15H15V6L8 0L1 6Z" :
 								"",
 					strokeColor: "#000000",
-					fillColor:  merchant.score > 4.4 ? "#d5e197" : 
-											merchant.score > 3.9 ? "#eaf2d7" : 
-											merchant.score > 3.6 ? "#ffdbc2" : 
-											merchant.score > 3 ? "#f2b4a3" : 
-											merchant.score > 0 ? "#f38989" : 
+					fillColor:  merchant.score > 4.4 ? "#0F4D0F" : 
+											merchant.score > 3.9 ? "#5CE65C" : 
+											merchant.score > 3.6 ? "#CCFFCC" : 
+											merchant.score > 3 ? "#F08080" : 
+											merchant.score > 0 ? "#8B0000" : 
 											"#ffffff",
 					fillOpacity: 1.0,
 					scale: 1
 				},
         /*label: {
-          text: merchant.num.length > 0 ? merchant.num : '-',
+          //text: merchant.num.length > 0 ? merchant.num : '-',
+          text: merchant.name,
           className: 'circle-label',
           fontSize: '12px'
         },*/

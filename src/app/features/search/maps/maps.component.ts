@@ -148,7 +148,7 @@ export class AngularGoogleMapsComponent {
         },*/
       },
       markerWindowInfo: {
-        html: '<div>' + (merchant.web ? '<a href=\"' + merchant.web + '\" target=\"_blank\">' + merchant.name + '</a>' : merchant.name) + '</div>'
+        html: '<div>' + (merchant.web ? '<a href=\"' + merchant.web + '\" target=\"_blank\">' + merchant.name + '</a>' : merchant.name) + " (" + merchant.score + ")" + '</div>'
 							+ '<div>' + merchant.address + '</div>'
 							+ '<p>'
 								+ (merchant.gob ? '<span>Público</span>' :  '')

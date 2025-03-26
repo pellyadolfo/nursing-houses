@@ -25,6 +25,7 @@
     text-align: center;
     width: 100%;
   }
+
 </style>
 
 <p-splitter [panelSizes]="[60, 40]" [minSizes]="[20, 40]" class="content" > 
@@ -90,24 +91,23 @@
 								<!--p class="card-text">{{merchant.desc}}</p-->
 							</div>
 							<div class="row m-1">
-								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
-								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
-								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
 								<div class="col"></div>
-								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
-								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
-								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
-								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
+								<div class="col"></div>
+								<div class="col"></div>
+								<div class="col"></div>
+								<div class="col"></div>
+								<div class="col"></div>
+								<div class="col"></div>
+								<div class="col"></div>
 							</div>
 							<div class="row m-1">
-								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
-								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
-								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
-								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
-								<div class="col"><i class="fa fa-headphones" aria-hidden="true"></i></div>
-								<div class="col"><i *ngIf="merchant.LE.GY" class="fa fa-bicycle" aria-hidden="true" title="Gym: {{merchant.LE.GY}}"></i></div>
-								<div class="col"><i *ngIf="merchant.LE.GM" class="fa fa-group" aria-hidden="true" title="Gym Monitor: {{merchant.LE.GM}}"></i></div>
-								<div class="col"><i *ngIf="merchant.LE.PO" class="fa fa-shower" aria-hidden="true" title="Piscina: {{merchant.LE.PO}}"></i></div>
+								<div class="col"></div>
+								<div class="col"></div>
+								<div class="col"></div>
+								<div class="col"></div>
+								<div class="col"><app-svg-icon *ngIf="merchant.LE.GY" class="card-cell gradient" [path]="'assets/icon/ico-gym-monitor.svg'" title="Gym: {{merchant.LE.GY}}"></app-svg-icon></div>
+								<div class="col"><app-svg-icon *ngIf="merchant.LE.GM" class="card-cell gradient" [path]="'assets/icon/ico-gym-monitor.svg'" title="Gym Monitor: {{merchant.LE.GM}}"></app-svg-icon></div>
+								<div class="col"><app-svg-icon *ngIf="merchant.LE.PO" class="card-cell gradient" [path]="'assets/icon/ico-swimming-pool.svg'" title="Piscina: {{merchant.LE.PO}}"></app-svg-icon></div>
 							</div>
 						</div>
 					</div>

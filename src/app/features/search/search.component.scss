@@ -20,3 +20,16 @@
 .card-score_5 {
 	background-color: #d5e197;
 }
+
+.card-cell {
+	display: block;
+	height: 24px;
+	width: 24px;
+}
+
+.green {
+  background-color: #00bd11;
+}
+.gradient {
+  background: linear-gradient(to bottom, #005aff, #de00ff);
+}

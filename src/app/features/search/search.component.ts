@@ -14,6 +14,7 @@ import { DataImportsService } from '../../services/dataImportsService';
 import { FiltersComponent } from './filters/filters.component';
 import { SelectorsComponent } from './selectors/selectors.component';
 import { MapMarker } from '@angular/google-maps';
+import { SvgIconComponent } from '../../shared/svg-icon/svg-icon.component';
 
 interface Coords {
 	lat: number;
@@ -26,7 +27,7 @@ interface Coords {
   templateUrl: './search.component.html',
   styleUrl: './search.component.scss',
 	standalone: true,
-  imports: [CommonModule, RouterOutlet, InputTextModule, AngularGoogleMapsComponent, ListboxModule, SplitterModule, MenubarModule, ScrollPanelModule, PanelModule, FiltersComponent, SelectorsComponent],
+  imports: [CommonModule, RouterOutlet, InputTextModule, AngularGoogleMapsComponent, ListboxModule, SplitterModule, MenubarModule, ScrollPanelModule, PanelModule, FiltersComponent, SelectorsComponent, SvgIconComponent],
 })
 export class SearchPage {
 

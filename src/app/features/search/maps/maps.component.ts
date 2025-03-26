@@ -133,7 +133,7 @@ export class AngularGoogleMapsComponent {
 					strokeColor: "#000000",
 					fillColor:  merchant.score > 4.4 ? "#0F4D0F" : 
 											merchant.score > 3.9 ? "#5CE65C" : 
-											merchant.score > 3.6 ? "#CCFFCC" : 
+											merchant.score > 3.6 ? "#FFCCCC" : 
 											merchant.score > 3 ? "#F08080" : 
 											merchant.score > 0 ? "#8B0000" : 
 											"#ffffff",

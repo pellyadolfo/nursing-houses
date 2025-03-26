@@ -121,12 +121,6 @@ export class AngularGoogleMapsComponent {
 				id: "MK_" + merchant.id,
         lat: lat,
         lng: lng,
-				// https://stackoverflow.com/questions/8248077/google-maps-v3-standard-icon-shadow-names-equiv-of-g-default-icon-in-v2
-				/*icon: this.selectorsCopy.selectedServiceCode == 'RE' ? "https://maps.gstatic.com/mapfiles/ms2/micons/lodging.png" :
-							this.selectorsCopy.selectedServiceCode == 'CD' ? ( merchant.gob == 'yes' ? "https://maps.gstatic.com/mapfiles/ms2/micons/partly_cloudy.png" : "https://maps.gstatic.com/mapfiles/ms2/micons/sunny.png" ) :
-							this.selectorsCopy.selectedServiceCode == 'AM' ? "https://maps.gstatic.com/mapfiles/ms2/micons/homegardenbusiness.png" :
-							this.selectorsCopy.selectedServiceCode == 'AD' ? "https://maps.gstatic.com/mapfiles/ms2/micons/homegardenbusiness.png" :
-							"",*/
 				icon: {
 					path: this.selectorsCopy.selectedServiceCode == 'RE' ? "M2 2H0V14H2V12H14V14H16V9C16 7.34315 14.6569 6 13 6H6C6 4.89543 5.10457 4 4 4H2V2Z" :
 								this.selectorsCopy.selectedServiceCode == 'RE' ? "M2 2H0V14H2V12H14V14H16V9C16 7.34315 14.6569 6 13 6H6C6 4.89543 5.10457 4 4 4H2V2Z" :

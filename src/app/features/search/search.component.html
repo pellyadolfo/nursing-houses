@@ -91,7 +91,7 @@
 								<!--p class="card-text">{{merchant.desc}}</p-->
 							</div>
 							<div class="row m-1">
-								<div class="col"></div>
+								<app-svg-icon *ngIf="merchant.avail" class="card-cell green" [path]="'assets/icon/ico-avail.svg'"></app-svg-icon>
 								<div class="col"></div>
 								<div class="col"></div>
 								<div class="col"></div>

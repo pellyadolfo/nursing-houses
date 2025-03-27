@@ -1,28 +1,28 @@
 { 
 	"coords" : {"lat": 43.5578054707177, "lng": -5.917110318188171, "zoom": 13},
 	"RES" : [
-		{"id": "001", "name": "Residencia Santa Teresa Jornet", "num": "220", "price": "", "address":"La Sablera 37 - San Cristobal, 33400 Avilés", "web": "https://www.hermanitas.net/", "coords": "43.56477800,-5.93687700", "image": ""},
-		{"id": "002", "name": "Hermanitas De Los Ancianos Desamparados", "num": "220", "price": "", "address":"La Sablera 5 - San Cristobal, 33400 Avilés", "web": "https://www.hermanitas.net/", "coords": "43.56599820,-5.93797560", "image": ""},
+		{"id": "001", "name": "Residencia Santa Teresa Jornet", "num": "220", "price": "", "address":"La Sablera 37 - San Cristobal, 33400 Avilés", "web": "https://www.hermanitas.net/", "coords": "43.56477800,-5.93687700", "image": "", "score": 0},
+		{"id": "002", "name": "Hermanitas De Los Ancianos Desamparados", "num": "220", "price": "", "address":"La Sablera 5 - San Cristobal, 33400 Avilés", "web": "https://www.hermanitas.net/", "coords": "43.56599820,-5.93797560", "image": "", "score": 0},
 		{"id": "003", "name": "DomusVi El Quirinal", "num": "166", "price": "", "address":"C/ José Cueto, 76 33401 Avilés", "web": "https://www.domusvi.es/residencias-ancianos/asturias/el-quirinal-aviles" ,"image": "", "coords": "43.56091160,-5.93657260"},
-		{"id": "004", "name": "DomusVi Los Telares (Centro Sociosanitario Larrañaga)", "num": "81", "price": "", "address":"Avenida de los Telares, 2. 33401 Avilés", "web": "https://www.domusvi.es/residencias-ancianos/asturias/los-telares-aviles", "coords": "43.55982890,-5.92193650", "image": ""},
-		{"id": "005", "name": "Residencia Verdeja", "num": "60", "price": "", "address":"Barrio de Pedrero, 19, 33468 Trasona, Corvera, Asturias, Spain", "web": "https://residenciaverdeja.es/", "coords": "43.55180670,-5.87195650", "image": ""},
-		{"id": "006", "name": "Residencia Tercera Edad Nelva", "num": "27", "price": "1600", "address":"Jardín de la Maruca, 28. 33400 Avilés", "web": "https://nelvaresidencia.webnode.es/", "coords": "43.57492030,-5.93491730", "image": ""},
-		{"id": "007", "name": "Residencia Belén-Carlos Aldama (antes La Santina)", "num": "17", "price": "", "address":"Urbanización Jardín de la Maruca, 30 33401 Avilés", "web": "https://www.facebook.com/lasantina.aldama/", "coords": "43.57492030,-5.9349173", "image": ""},
-		{"id": "008", "name": "Residencia del ERA de El Nodo", "num": "?", "price": "", "address":"Calle de el Balandro, 20, 33401 Avilés, Asturias, Spain", "web": "https://socialasturias.asturias.es/acceso-a-centros1", "coords": "43.56464260-5.92989330", "image": ""}
+		{"id": "004", "name": "DomusVi Los Telares (Centro Sociosanitario Larrañaga)", "num": "81", "price": "", "address":"Avenida de los Telares, 2. 33401 Avilés", "web": "https://www.domusvi.es/residencias-ancianos/asturias/los-telares-aviles", "coords": "43.55982890,-5.92193650", "image": "", "score": 0},
+		{"id": "005", "name": "Residencia Verdeja", "num": "60", "price": "", "address":"Barrio de Pedrero, 19, 33468 Trasona, Corvera, Asturias, Spain", "web": "https://residenciaverdeja.es/", "coords": "43.55180670,-5.87195650", "image": "", "score": 0},
+		{"id": "006", "name": "Residencia Tercera Edad Nelva", "num": "27", "price": "1600", "address":"Jardín de la Maruca, 28. 33400 Avilés", "web": "https://nelvaresidencia.webnode.es/", "coords": "43.57492030,-5.93491730", "image": "", "score": 0},
+		{"id": "007", "name": "Residencia Belén-Carlos Aldama (antes La Santina)", "num": "17", "price": "", "address":"Urbanización Jardín de la Maruca, 30 33401 Avilés", "web": "https://www.facebook.com/lasantina.aldama/", "coords": "43.57492030,-5.9349173", "image": "", "score": 0},
+		{"id": "008", "name": "Residencia del ERA de El Nodo", "num": "?", "price": "", "address":"Calle de el Balandro, 20, 33401 Avilés, Asturias, Spain", "web": "https://socialasturias.asturias.es/acceso-a-centros1", "coords": "43.56464260-5.92989330", "image": "", "score": 0}
 	],
 	"CD": [
-		{"id": "100", "name": "Centro de día del ERA de El Nodo", "num": "?", "price": "", "address":"Calle de el Balandro, 20, 33401 Avilés, Asturias, Spain", "web": "https://socialasturias.asturias.es/acceso-a-centros1", "coords": "43.56464260,-5.92989330", "image": ""},
-		{"id": "101", "name": "Centro de día ACD", "num": "30", "price": "", "address":"Marcos de Torniello, 37-39 BAJO, Avilés", "web": "https://www.acdcentros.com/6/centro-de-dia-en-aviles-acd-i-aviles/9/centro-de-dia-en-aviles-acd-aviles-i", "coords": "43.561790,-5.925210", "image": ""},
-		{"id": "102", "name": "Centro de Día Jardín de Cantos", "num": "28", "price": "", "address":"La Xana 2, 33400 Avilés (Asturias)", "web": "https://www.elcomercio.es/aviles/personas-esperan-entrar-20221024000810-ntvo.html", "coords": "43.5677175,-5.9285044", "image": ""}
+		{"id": "100", "name": "Centro de día del ERA de El Nodo", "num": "?", "price": "", "address":"Calle de el Balandro, 20, 33401 Avilés, Asturias, Spain", "web": "https://socialasturias.asturias.es/acceso-a-centros1", "coords": "43.56464260,-5.92989330", "image": "", "score": 0},
+		{"id": "101", "name": "Centro de día ACD", "num": "30", "price": "", "address":"Marcos de Torniello, 37-39 BAJO, Avilés", "web": "https://www.acdcentros.com/6/centro-de-dia-en-aviles-acd-i-aviles/9/centro-de-dia-en-aviles-acd-aviles-i", "coords": "43.561790,-5.925210", "image": "", "score": 0},
+		{"id": "102", "name": "Centro de Día Jardín de Cantos", "num": "28", "price": "", "address":"La Xana 2, 33400 Avilés (Asturias)", "web": "https://www.elcomercio.es/aviles/personas-esperan-entrar-20221024000810-ntvo.html", "coords": "43.5677175,-5.9285044", "image": "", "score": 0}
 	],
 	"AM": [],
 	"AD": [
-		{"id": "301", "name": "Ayudartis", "num": "", "price": "", "address":"C/ La Cámara 3, 2º dcha, Avilés, ASTURIAS", "web": "https://ayudartis.com/", "coords": "43.5556404,-5.9228336", "image": ""},
-		{"id": "302", "name": "Ayuda en Hogar", "num": "", "price": "", "address":"Calle Sabino Álvarez Gendín, 4 BAJO, 33402, Avilés, ASTURIAS", "web": "http://www.ayudaenhogar.com/", "coords": "43.551678,-5.925932", "image": ""},
-		{"id": "303", "name": "Ayuda en Hogar", "num": "", "price": "", "address":"Calle Sabino Álvarez Gendín, 4 BAJO, 33402, Avilés, ASTURIAS", "web": "http://www.ayudaenhogar.com/", "coords": "43.540619,-5.940972", "image": ""},
-		{"id": "304", "name": "ASISER", "num": "", "price": "", "address":"Calle Santa Apolonia 40. Aviles", "web": "https://asiseraviles.com/", "coords": "43.5463075,-5.9066955", "image": ""},
-		{"id": "305", "name": "Edades", "num": "", "price": "", "address":"C. Marcos del Torniello, 34, 33401 Avilés", "web": "https://edades.eu/aviles/", "coords": "43.5606302,-5.9244227", "image": ""},
-		{"id": "306", "name": "Inneria Social S.L.U. (antes Alfa Servicios Asistenciales)", "num": "", "price": "", "address":"C/ Fernandez Balsera Nº 30, Semibajo , Avilés , Asturias", "web": "", "coords": "43.5549646,-5.9275469", "image": ""},
-		{"id": "307", "name": "SerHogarsystem", "num": "", "price": "", "address":"C. Rivero, Nº112 Avilés", "web": "https://www.serhogarsystem.com/aviles/", "coords": "43.5515689,-5.9197876", "image": ""}
+		{"id": "301", "name": "Ayudartis", "num": "", "price": "", "address":"C/ La Cámara 3, 2º dcha, Avilés, ASTURIAS", "web": "https://ayudartis.com/", "coords": "43.5556404,-5.9228336", "image": "", "score": 0},
+		{"id": "302", "name": "Ayuda en Hogar", "num": "", "price": "", "address":"Calle Sabino Álvarez Gendín, 4 BAJO, 33402, Avilés, ASTURIAS", "web": "http://www.ayudaenhogar.com/", "coords": "43.551678,-5.925932", "image": "", "score": 0},
+		{"id": "303", "name": "Ayuda en Hogar", "num": "", "price": "", "address":"Calle Sabino Álvarez Gendín, 4 BAJO, 33402, Avilés, ASTURIAS", "web": "http://www.ayudaenhogar.com/", "coords": "43.540619,-5.940972", "image": "", "score": 0},
+		{"id": "304", "name": "ASISER", "num": "", "price": "", "address":"Calle Santa Apolonia 40. Aviles", "web": "https://asiseraviles.com/", "coords": "43.5463075,-5.9066955", "image": "", "score": 0},
+		{"id": "305", "name": "Edades", "num": "", "price": "", "address":"C. Marcos del Torniello, 34, 33401 Avilés", "web": "https://edades.eu/aviles/", "coords": "43.5606302,-5.9244227", "image": "", "score": 0},
+		{"id": "306", "name": "Inneria Social S.L.U. (antes Alfa Servicios Asistenciales)", "num": "", "price": "", "address":"C/ Fernandez Balsera Nº 30, Semibajo , Avilés , Asturias", "web": "", "coords": "43.5549646,-5.9275469", "image": "", "score": 0},
+		{"id": "307", "name": "SerHogarsystem", "num": "", "price": "", "address":"C. Rivero, Nº112 Avilés", "web": "https://www.serhogarsystem.com/aviles/", "coords": "43.5515689,-5.9197876", "image": "", "score": 0}
 	]
 }

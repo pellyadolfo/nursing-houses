@@ -47,7 +47,7 @@ export class SearchPage {
 		}
 
 		// https://cuernavaca.infoisinfo.com.mx/busqueda/asilo
-		this.merchants = merchants_ES_GI.RES;
+		this.merchants = merchants_ES_GI.RES.sort((a,b) => a.score && b.score ? (Number(b.score) - Number(a.score)) : -1)
 		this.coords = merchants_ES_GI.coords;
 	}
 
@@ -60,7 +60,7 @@ export class SearchPage {
 				.then(result => {
 
 					if (this.selectors.selectedServiceCode === 'RE')
-						this.merchants = result.RES; //.sort((a,b) => a.score - b.score)
+						this.merchants = result.RES.sort((a,b) => a.score && b.score ? ((b.score as number) - (a.score as number)) : -1)
 					else if (this.selectors.selectedServiceCode === 'CD')
 						this.merchants = result.CD;
 					else if (this.selectors.selectedServiceCode === 'AD')

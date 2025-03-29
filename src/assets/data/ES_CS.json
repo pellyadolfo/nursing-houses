@@ -1,0 +1,10 @@
+{ 
+	"coords" : {"lat": 43.57409586543534, "lng": -5.9776946642998325, "zoom": 13},
+	"RES" : [
+		{"id": "CS000", "avail": true, "name": "Centro Geriátrico Residencia Santa María", "num": "29", "price": "", "address":"Avenida Federico Fernández Trapa, 16. Naveces. Castrillón", "web": "http://www.geriatricoresidenciasantamaria.com/", "coords": "43.57128291487919, -6.00063706051917", "gob": "no", "score": "4.6", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "CS001", "avail": true, "name": "Centro Geriátrico Salinas", "num": "25", "price": "", "address":"C/ Ramón y Cajal, 24. 33405 Salinas. Castrillón", "web": "http://www.geriatricosalinas.es/", "coords": "43.574665846605804, -5.957683541484791", "gob": "no", "score": "4.6", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
+	],
+	"CD": [],
+	"AM": [],
+	"AD": []
+}

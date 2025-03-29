@@ -1,7 +1,7 @@
 { 
-	"coords" : {"lat": 43.61594750354536, "lng": -5.794293316269139, "zoom": 13},
+	"coords" : {"lat": 43.220053846101194, "lng": -5.449468574027199, "zoom": 13},
 	"RES" : [
-		{"id": "GO000", "avail": true, "name": "", "num": "", "price": "", "address":"", "web": "", "coords": "", "gob": "no", "score": "", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
+		{"id": "SO000", "avail": true, "name": "Residencia Geriátrica San Luis", "num": "25", "price": "", "address":"Rioseco, 206. 33993 Sobrescobio", "web": "", "coords": "43.220053846101194, -5.449468574027199", "gob": "no", "score": "3.7", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
 	],
 	"CD": [],
 	"AM": [],

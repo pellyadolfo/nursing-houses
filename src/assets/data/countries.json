@@ -11,7 +11,7 @@
 		{ "name": "Grado", "code": "GR", "inactive": false },
 		{ "name": "Langreo", "code": "LA", "inactive": true },
 		{ "name": "Las Regueras", "code": "RE", "inactive": false },
-		{ "name": "Pola de Lena", "code": "PL", "inactive": true },
+		{ "name": "Pola de Lena", "code": "PL", "inactive": false },
 		{ "name": "Llanera", "code": "LL", "inactive": true },
 		{ "name": "Llanes", "code": "LS", "inactive": false },
 		{ "name": "Mieres", "code": "MI", "inactive": true },

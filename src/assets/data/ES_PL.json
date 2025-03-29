@@ -1,0 +1,9 @@
+{ 
+	"coords" : {"lat": 43.155123341324455, "lng": -5.832017383832741, "zoom": 13},
+	"RES" : [
+		{"id": "PL000", "avail": true, "name": "Residencia Canuto Hevia", "num": "150", "price": "", "address":"C/ Molino de la Sala, 11. Pola de Lena. 33630 Lena", "web": "https://residenciacanutohevia.es/", "coords": "43.155123341324455, -5.832017383832741", "gob": "no", "score": "4.3", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
+	],
+	"CD": [],
+	"AM": [],
+	"AD": []
+}

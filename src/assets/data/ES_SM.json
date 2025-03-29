@@ -1,7 +1,7 @@
 { 
 	"coords" : {"lat": 43.28807067852712, "lng": -5.641781513494596, "zoom": 14},
 	"RES" : [
-		{"id": "SM000", "avail": true, "name": "Residencia Geriátrica Rivera Onís", "num": "25", "price": "", "address":"Avenida del Parque, 10. 33940 El Entrego", "web": "https://riveraonis@es", "coords": "43.28804155541293, -5.641775501013443", "gob": "no", "score": "4.8", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
+		{"id": "SM000", "avail": true, "name": "Residencia Geriátrica Rivera Onís", "num": "25", "price": "", "address":"Avenida del Parque, 10. 33940 El Entrego", "web": "https://riveraonis.es/", "coords": "43.28804155541293, -5.641775501013443", "gob": "no", "score": "4.8", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
 	],
 	"CD": [],
 	"AM": [],

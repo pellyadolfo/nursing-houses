@@ -1,0 +1,9 @@
+{ 
+	"coords" : {"lat": 43.46917415570603, "lng": -5.444405693270637, "zoom": 15},
+	"RES" : [
+		{"id": "VI000", "avail": true, "name": "Residencia Miyar-Somonte", "num": "98", "price": "", "address":"San Juan de Amandi. 33311 Villaviciosa", "web": "http://www.residenciamiyarsomonte.es", "coords": "43.46845840662588, -5.4442441586758825", "gob": "no", "score": "", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
+	],
+	"CD": [],
+	"AM": [],
+	"AD": []
+}

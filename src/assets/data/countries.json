@@ -1,9 +1,12 @@
 [
 	{ "name": "España", "code": "ES", "inactive": false, "cities": [
+		{ "name": "Aller", "code": "AL", "inactive": false },
 		{ "name": "Avilés", "code": "AV", "inactive": false },
 		{ "name": "Gozón", "code": "GO", "inactive": false },
+		{ "name": "Gijón", "code": "GI", "inactive": false },
+		{ "name": "Llanes", "code": "LS", "inactive": false },
 		{ "name": "Oviedo", "code": "OV", "inactive": true },
-		{ "name": "Gijón", "code": "GI", "inactive": false }
+		{ "name": "Villaviciosa", "code": "VI", "inactive": false }
 	]}, 
 	{ "name": "Portugal", "code": "PT", "inactive": true, "cities": [
 	]}, 

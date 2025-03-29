@@ -1,0 +1,11 @@
+{ 
+	"coords" : {"lat": 43.42858703843899, "lng": -4.81005264511694, "zoom": 13},
+	"RES" : [
+		{"id": "LS000", "avail": true, "name": "Residencia Quintana de Pancar", "num": "63", "price": "", "address":"La Carua, s/n. Pancar. 33509 Llanes", "web": "https://residenciapancar.es/", "coords": "43.413869499847884, -4.759005402853898", "gob": "no", "score": "4.6", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "LS001", "avail": true, "name": "CK Celorio", "num": "38", "price": "", "address":"Carretera General AS- 263 s/n. Celorio 33595 Llanes", "web": "https://cksenior.es/centros/senior-celorio/", "coords": "43.42559431673686, -4.811673204327094", "gob": "no", "score": "0", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "LS002", "avail": true, "name": "Residencia Sierra del Cuera", "num": "100", "price": "", "address":"Lledías, s/n Posada 33594 Llanes", "web": "https://www.facebook.com/p/Residencia-Sierra-Cuera-61557432133116/", "coords": "43.422007250736144, -4.859995031688702", "gob": "no", "score": "4.5", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
+	],
+	"CD": [],
+	"AM": [],
+	"AD": []
+}

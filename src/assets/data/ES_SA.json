@@ -1,0 +1,9 @@
+{ 
+	"coords" : {"lat": 43.409502600119026, "lng": -5.560318304700052, "zoom": 13},
+	"RES" : [
+		{"id": "SA000", "avail": true, "name": "Hotel Geriátrico Royal", "num": "25", "price": "1650", "address":"Vega de Sariego. 33518 Sariego", "web": "https://www.hotelgeriatricoroyal.es/", "coords": "43.409502600119026, -5.560318304700052", "gob": "no", "score": "3.3", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
+	],
+	"CD": [],
+	"AM": [],
+	"AD": []
+}

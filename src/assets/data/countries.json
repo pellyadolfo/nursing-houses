@@ -2,10 +2,16 @@
 	{ "name": "España", "code": "ES", "inactive": false, "cities": [
 		{ "name": "Aller", "code": "AL", "inactive": false },
 		{ "name": "Avilés", "code": "AV", "inactive": false },
-		{ "name": "Gozón", "code": "GO", "inactive": false },
+		{ "name": "Corvera", "code": "CO", "inactive": false },
 		{ "name": "Gijón", "code": "GI", "inactive": false },
+		{ "name": "Gozón", "code": "GO", "inactive": false },
+		{ "name": "Grado", "code": "GR", "inactive": false },
 		{ "name": "Llanes", "code": "LS", "inactive": false },
-		{ "name": "Oviedo", "code": "OV", "inactive": true },
+		{ "name": "Nava", "code": "NA", "inactive": false },
+		{ "name": "Parres", "code": "PA", "inactive": false },
+		{ "name": "Riosa", "code": "RI", "inactive": false },
+		{ "name": "Sariego", "code": "SA", "inactive": false },
+		{ "name": "SMRA", "code": "SM", "inactive": false },
 		{ "name": "Villaviciosa", "code": "VI", "inactive": false }
 	]}, 
 	{ "name": "Portugal", "code": "PT", "inactive": true, "cities": [

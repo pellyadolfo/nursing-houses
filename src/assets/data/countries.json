@@ -1,7 +1,7 @@
 [
 	{ "name": "España", "code": "ES", "inactive": false, "cities": [
 		{ "name": "Avilés", "code": "AV", "inactive": false },
-		{ "name": "Gozón", "code": "GO", "inactive": true },
+		{ "name": "Gozón", "code": "GO", "inactive": false },
 		{ "name": "Oviedo", "code": "OV", "inactive": true },
 		{ "name": "Gijón", "code": "GI", "inactive": false }
 	]}, 

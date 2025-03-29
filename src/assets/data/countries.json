@@ -1,9 +1,9 @@
 [
 	{ "name": "España", "code": "ES", "inactive": false, "cities": [
-		{ "name": "Oviedo", "code": "OV", "inactive": true },
-		{ "name": "Gijón", "code": "GI", "inactive": false },
 		{ "name": "Avilés", "code": "AV", "inactive": false },
-		{ "name": "Luanco", "code": "LU", "inactive": true }
+		{ "name": "Gozón", "code": "GO", "inactive": true },
+		{ "name": "Oviedo", "code": "OV", "inactive": true },
+		{ "name": "Gijón", "code": "GI", "inactive": false }
 	]}, 
 	{ "name": "Portugal", "code": "PT", "inactive": true, "cities": [
 	]}, 

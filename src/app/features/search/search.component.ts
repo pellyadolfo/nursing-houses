@@ -7,7 +7,7 @@ import { ListboxModule } from 'primeng/listbox';
 import { SplitterModule } from 'primeng/splitter';
 import { MenubarModule } from 'primeng/menubar';
 
-import merchants_ES_GI from '../../../assets/ES_GI.json';
+import merchants_ES_GI from '../../../assets/data/ES_GI.json';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { PanelModule } from 'primeng/panel';
 import { DataImportsService } from '../../services/dataImportsService';
@@ -60,7 +60,7 @@ export class SearchPage {
 				.then(result => {
 
 					if (this.selectors.selectedServiceCode === 'RE')
-						this.merchants = result.RES.sort((a,b) => a.score && b.score ? ((b.score as number) - (a.score as number)) : -1)
+						this.merchants = result.RES.sort((a: any,b: any) => a.score && b.score ? ((b.score as number) - (a.score as number)) : -1)
 					else if (this.selectors.selectedServiceCode === 'CD')
 						this.merchants = result.CD;
 					else if (this.selectors.selectedServiceCode === 'AD')

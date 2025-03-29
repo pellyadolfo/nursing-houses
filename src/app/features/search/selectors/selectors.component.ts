@@ -2,7 +2,7 @@ import { Component, EventEmitter, Output } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { SelectChangeEvent, SelectModule } from "primeng/select";
 
-import countries from '../../../../assets/countries.json'
+import countries from '../../../../assets/data/countries.json'
 
 interface Service {
   name: string;

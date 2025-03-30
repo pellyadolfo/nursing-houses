@@ -1,7 +1,7 @@
 { 
 	"coords" : {"lat": 43.37335059285042, "lng": -5.181641223758148, "zoom": 13},
 	"RES" : [
-		{"id": "PA000", "avail": true, "name": "Residencia Geriátrica Parres I", "num": "33", "price": "", "address":"c/El Texu, 6. 33540 Arriondas", "web": "", "coords": "43.38031414035154, -5.183023905976716", "gob": "no", "score": "0", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "PA000", "avail": true, "name": "Residencia Geriátrica Parres I", "num": "33", "price": "", "address":"c/El Texu, 6. 33540 Arriondas", "web": "https://www.facebook.com/pages/Residencia%20Geri%C3%A1trica%20Parres/1693527824232138/#", "coords": "43.38031414035154, -5.183023905976716", "gob": "no", "score": "0", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
 		{"id": "PA001", "avail": true, "name": "Residencia Geriátrica Parres II", "num": "11", "price": "", "address":"Romillín. 33540 Arriondas", "web": "", "coords": "43.36664721522872, -5.174607130238854", "gob": "no", "score": "0", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
 	],
 	"CD": [],

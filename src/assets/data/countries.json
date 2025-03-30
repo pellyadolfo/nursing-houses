@@ -18,7 +18,7 @@
 		{ "name": "Oviedo", "code": "MI", "inactive": true },
 		{ "name": "Parres", "code": "PA", "inactive": false },
 		{ "name": "Pola de Lena", "code": "PL", "inactive": false },
-		{ "name": "Pola de Siero", "code": "SI", "inactive": true },
+		{ "name": "Pola de Siero", "code": "SI", "inactive": false },
 		{ "name": "Riosa", "code": "RI", "inactive": false },
 		{ "name": "Salas", "code": "SL", "inactive": false },
 		{ "name": "SMRA", "code": "SM", "inactive": false },

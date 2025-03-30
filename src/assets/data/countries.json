@@ -13,7 +13,7 @@
 		{ "name": "Las Regueras", "code": "RE", "inactive": false },
 		{ "name": "Llanera", "code": "LL", "inactive": false },
 		{ "name": "Llanes", "code": "LS", "inactive": false },
-		{ "name": "Mieres", "code": "MI", "inactive": true },
+		{ "name": "Mieres", "code": "MI", "inactive": false },
 		{ "name": "Nava", "code": "NA", "inactive": false },
 		{ "name": "Oviedo", "code": "MI", "inactive": true },
 		{ "name": "Parres", "code": "PA", "inactive": false },

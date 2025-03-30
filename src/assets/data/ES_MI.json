@@ -1,0 +1,16 @@
+{ 
+	"coords" : {"lat": 43.23110500000003, "lng": -5.780506872691683, "zoom": 13},
+	"RES" : [
+		{"id": "MI000", "avail": true, "name": "Centro Socio-Sanitario de Ablaña", "num": "158", "price": "", "address":"Ablaña, s/n. (Antiguo Hospital de Hunosa) Mieres", "web": "https://xn--gerontologicodeablaa-m7b.com/", "coords": "43.26408033267887, -5.793666604898508", "gob": "no", "score": "3.9", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "MI001", "avail": true, "name": "Centro Socio-Sanitario Bustiello", "num": "32", "price": "", "address":"Bustiello, 3. Santa Cruz de Mieres. 33612 Mieres", "web": "http://www.csbustiello.com/", "coords": "43.18872518835645, -5.767866826258857", "gob": "no", "score": "4.9", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "MI002", "avail": true, "name": "Geriátricos Abuli", "num": "32", "price": "", "address":"El Campo. Santo Emiliano, s/n. 33616 Mieres", "web": "https://geriatricos-abuli.es/", "coords": "43.27356224688411, -5.718597431771763", "gob": "no", "score": "5", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "MI003", "avail": true, "name": "Residencia El Padrún", "num": "20", "price": "", "address":"Alto del Padrun, s/n. 33600 Mieres", "web": "https://www.residenciapadrun.com/donde-estamos", "coords": "43.28816716480012, -5.8098569028594", "gob": "no", "score": "4", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "MI004", "avail": true, "name": "Residencia Imperial", "num": "46", "price": "", "address":"C/ Imperial Cinema s/n. Ablaña. 33650 Mieres", "web": "https://www.residenciaimperial.com/", "coords": "43.266453057997694, -5.805172189365712", "gob": "no", "score": "4.6", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "MI005", "avail": true, "name": "Residencia Nuestra Señora del Rosario", "num": "14", "price": "", "address":"C/ Aller, 31-B, 1º 33600 Mieres", "web": "https://www.nuestrasenoradelrosario.es/", "coords": "43.257743189906634, -5.774243652515302", "gob": "no", "score": "4.8", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "MI006", "avail": true, "name": "Residencia Picu Siana", "num": "53", "price": "", "address":"Carretera Seana, s/n. 33618 Mieres", "web": "https://residenciapicusiana.com/", "coords": "43.25491288967635, -5.789061868569191", "gob": "no", "score": "3.5", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "MI007", "avail": true, "name": "Organismo Autónomo de Servicios Sociales del Ayuntamiento de Mieres", "num": "64", "price": "", "address":"c/ Doce de Octubre, s/n 33600 Mieres", "web": "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigramas/fichaUnidadOrganica.htm?idUnidOrganica=35070&origenUO=entitatsLocals&volver=entitatsLocals&idProvincia=33", "coords": "43.251358401624934, -5.773031856839387", "gob": "no", "score": "2.7", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
+	],
+	"CD": [],
+	"AM": [],
+	"AD": []
+}

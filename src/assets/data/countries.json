@@ -9,7 +9,7 @@
 		{ "name": "Gijón", "code": "GI", "inactive": false },
 		{ "name": "Gozón", "code": "GO", "inactive": false },
 		{ "name": "Grado", "code": "GR", "inactive": false },
-		{ "name": "Langreo", "code": "LA", "inactive": true },
+		{ "name": "Langreo", "code": "LA", "inactive": false },
 		{ "name": "Las Regueras", "code": "RE", "inactive": false },
 		{ "name": "Llanera", "code": "LL", "inactive": false },
 		{ "name": "Llanes", "code": "LS", "inactive": false },

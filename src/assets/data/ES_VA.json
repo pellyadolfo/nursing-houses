@@ -1,7 +1,7 @@
 { 
 	"coords" : {"lat": 43.53833249903183, "lng": -6.724434328636155, "zoom": 14},
 	"RES" : [
-		{"id": "NI000", "avail": true, "name": "SADOA", "num": "", "price": "", "address":"c/Álvaro Delgado, 3 bajo. 33710 Navia", "web": "https://sadoaprincipado.com/", "coords": "43.53833249903183, -6.724434328636155", "gob": "no", "score": "5", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
+		{"id": "VA000", "avail": true, "name": "SADOA", "num": "", "price": "", "address":"c/Álvaro Delgado, 3 bajo. 33710 Navia", "web": "https://sadoaprincipado.com/", "coords": "43.53833249903183, -6.724434328636155", "gob": "no", "score": "5", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
 	],
 	"CD": [],
 	"AM": [],

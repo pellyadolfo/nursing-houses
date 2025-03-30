@@ -1,0 +1,12 @@
+{ 
+	"coords" : {"lat": 43.438328124260764, "lng": -5.832509490262818, "zoom": 14},
+	"RES" : [
+		{"id": "LL000", "avail": true, "name": "Centro Residencial El Parador", "num": "19", "price": "", "address":"C/ Alejandro Mon, 6. Posada de Llanera 33424 Llanera", "web": "", "coords": "43.442059595032596, -5.851950139071639", "gob": "no", "score": "3.5", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "LL001", "avail": true, "name": "Centro Residencial Pérez-Espinosa", "num": "24", "price": "", "address":"Abarrio, 23. La Tejera. Centenal. 33424 Llanera", "web": "http://www.centroresidencial.grupoperez-espinosa.com/", "coords": "43.45145691558538, -5.856058058708596", "gob": "no", "score": "0", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "LL002", "avail": true, "name": "Residencia Tercera Edad Margarita", "num": "24", "price": "", "address":"Santa Rosa nº 47. 33690 Llanera", "web": "http://centroresidencial.grupoperezespinosa.com/", "coords": "43.43661541125202, -5.809006916347533", "gob": "no", "score": "4", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "LL003", "avail": true, "name": "Residencia Geriátrica La Familia", "num": "16", "price": "", "address":"Ables, 9 La Portiella. 33424 Posada de Llanera", "web": "", "coords": "43.421384037150936, -5.858476074018469", "gob": "no", "score": "3.8", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
+	],
+	"CD": [],
+	"AM": [],
+	"AD": []
+}

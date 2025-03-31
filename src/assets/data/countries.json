@@ -1,5 +1,6 @@
 [
 	{ "name": "España", "code": "ES", "inactive": false, "cities": [
+		{ "name": "Asturias", "code": "AS", "inactive": false },
 		{ "name": "Aller", "code": "AL", "inactive": false },
 		{ "name": "Avilés", "code": "AV", "inactive": false },
 		{ "name": "Candamo", "code": "CA", "inactive": false },

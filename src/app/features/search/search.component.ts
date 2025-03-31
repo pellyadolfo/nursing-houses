@@ -7,7 +7,7 @@ import { ListboxModule } from 'primeng/listbox';
 import { SplitterModule } from 'primeng/splitter';
 import { MenubarModule } from 'primeng/menubar';
 
-import merchants_ES_GI from '../../../assets/data/ES_GI.json';
+import merchants_ES_AS from '../../../assets/data/ES_AS.json';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { PanelModule } from 'primeng/panel';
 import { DataImportsService } from '../../services/dataImportsService';
@@ -47,8 +47,8 @@ export class SearchPage {
 		}
 
 		// https://cuernavaca.infoisinfo.com.mx/busqueda/asilo
-		this.merchants = merchants_ES_GI.RES.sort((a,b) => a.score && b.score ? (Number(b.score) - Number(a.score)) : -1)
-		this.coords = merchants_ES_GI.coords;
+		this.merchants = merchants_ES_AS.RES.sort((a,b) => a.score && b.score ? (Number(b.score) - Number(a.score)) : -1)
+		this.coords = merchants_ES_AS.coords;
 	}
 
 	onChange(change: boolean) {

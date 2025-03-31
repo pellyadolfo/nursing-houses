@@ -51,7 +51,7 @@ export class SelectorsComponent {
     
 		this.countries = countries;
 		
-		this.cities = this.preselectCountry('ES');
+		this.cities = this.preselectCountry('ES').filter(function(item){ return item.visible; });
 	}
 
 	preselectCountry(code: string) {
@@ -59,7 +59,7 @@ export class SelectorsComponent {
 	}
 
 	selectCountry(event: SelectChangeEvent) {
-		this.cities = countries.filter(function(item){ return item.code == event.value; })[0].cities;
+		this.cities = countries.filter(function(item){ return item.code == event.value; })[0].cities.filter(function(item){ return item.visible; });
 		this.selectedCountryCode = event.value;
 		this.selectedCityCode = this.cities.filter(function(item){ return item.inactive == false; })[0].code;
 

@@ -1,9 +1,0 @@
-{ 
-	"coords" : {"lat": 43.417794917588424, "lng": -5.976476745183422, "zoom": 13},
-	"RES" : [
-		{"id": "RE000", "avail": true, "name": "Residencia Tercera Edad El Canto", "num": "24", "price": "", "address":"Santullano. 33191 Las Regueras", "web": "", "coords": "43.417794917588424, -5.9764767451834221", "gob": "no", "score": "3.5", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
-	],
-	"CD": [],
-	"AM": [],
-	"AD": []
-}

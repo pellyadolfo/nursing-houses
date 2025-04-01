@@ -1,9 +1,0 @@
-{ 
-	"coords" : {"lat": 43.220053846101194, "lng": -5.449468574027199, "zoom": 13},
-	"RES" : [
-		{"id": "SO000", "avail": true, "name": "Residencia Geriátrica San Luis", "num": "25", "price": "", "address":"Rioseco, 206. 33993 Sobrescobio", "web": "", "coords": "43.220053846101194, -5.449468574027199", "gob": "no", "score": "3.7", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
-	],
-	"CD": [],
-	"AM": [],
-	"AD": []
-}

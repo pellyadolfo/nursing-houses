@@ -1,32 +1,7 @@
 [
 	{ "name": "España", "code": "ES", "inactive": false, "cities": [
 		{ "name": "Asturias", "code": "AS", "inactive": false, "visible": true },
-		{ "name": "Aller", "code": "AL", "inactive": true, "visible": false },
-		{ "name": "Avilés", "code": "AV", "inactive": true, "visible": false },
-		{ "name": "Candamo", "code": "CA", "inactive": true, "visible": false },
-		{ "name": "Carreño", "code": "CR", "inactive": true, "visible": false },
-		{ "name": "Castrillón", "code": "CS", "inactive": true, "visible": false },
-		{ "name": "Corvera", "code": "CO", "inactive": true, "visible": false },
-		{ "name": "Gijón", "code": "GI", "inactive": true, "visible": false },
-		{ "name": "Gozón", "code": "GO", "inactive": true, "visible": false },
-		{ "name": "Grado", "code": "GR", "inactive": true, "visible": false },
-		{ "name": "Langreo", "code": "LA", "inactive": true, "visible": false },
-		{ "name": "Las Regueras", "code": "RE", "inactive": true, "visible": false },
-		{ "name": "Llanera", "code": "LL", "inactive": true, "visible": false },
-		{ "name": "Llanes", "code": "LS", "inactive": true, "visible": false },
-		{ "name": "Mieres", "code": "MI", "inactive": true, "visible": false },
-		{ "name": "Nava", "code": "NA", "inactive": true, "visible": false },
-		{ "name": "Oviedo", "code": "OV", "inactive": true, "visible": false },
-		{ "name": "Parres", "code": "PA", "inactive": true, "visible": false },
-		{ "name": "Pola de Lena", "code": "PL", "inactive": true, "visible": false },
-		{ "name": "Pola de Siero", "code": "SI", "inactive": true, "visible": false },
-		{ "name": "Riosa", "code": "RI", "inactive": true, "visible": false },
-		{ "name": "Salas", "code": "SL", "inactive": true, "visible": false },
-		{ "name": "SMRA", "code": "SM", "inactive": true, "visible": false },
-		{ "name": "Sariego", "code": "SA", "inactive": true, "visible": false },
-		{ "name": "Sobrescobio", "code": "SO", "inactive": true, "visible": false },
-		{ "name": "Valdés", "code": "VA", "inactive": true, "visible": false },
-		{ "name": "Villaviciosa", "code": "VI", "inactive": true, "visible": false }
+		{ "name": "Cantabria", "code": "CT", "inactive": false, "visible": true }
 	]}, 
 	{ "name": "Portugal", "code": "PT", "inactive": true, "cities": [
 	]}, 

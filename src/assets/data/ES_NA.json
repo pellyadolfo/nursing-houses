@@ -1,9 +1,0 @@
-{ 
-	"coords" : {"lat": 43.35663818796281, "lng": -5.429299358680761, "zoom": 13},
-	"RES" : [
-		{"id": "NA000", "avail": true, "name": "DomusVi Carancos", "num": "98", "price": "", "address":"Carancos, 20 33582 Nava", "web": "https://www.domusvi.es/residencias-ancianos/asturias/carancos", "coords": "43.35663818796281, -5.429299358680761", "gob": "no", "score": "3.8", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
-	],
-	"CD": [],
-	"AM": [],
-	"AD": []
-}

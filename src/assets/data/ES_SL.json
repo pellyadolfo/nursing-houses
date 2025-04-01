@@ -1,9 +1,0 @@
-{ 
-	"coords" : {"lat": 43.453432511514364, "lng": -6.25556491637828, "zoom": 14},
-	"RES" : [
-		{"id": "SL000", "avail": true, "name": "Residencia San Pedro", "num": "23", "price": "1650", "address":"Mallecina, 11 33867 Salas", "web": "https://www.residenciasanpedro.es/", "coords": "43.453432511514364, -6.25556491637828", "gob": "no", "score": "4.1", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
-	],
-	"CD": [],
-	"AM": [],
-	"AD": []
-}

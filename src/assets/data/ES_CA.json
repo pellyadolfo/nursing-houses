@@ -1,9 +1,0 @@
-{ 
-	"coords" : {"lat": 43.44951104222384, "lng": -6.072879475895629, "zoom": 13},
-	"RES" : [
-		{"id": "CA000", "avail": true, "name": "Residencia Doña Manolita", "num": "24", "price": "", "address":"C/ La Fontina, 104. 33828 San Román de Candamo", "web": "https://www.residenciamanolita.com/", "coords": "43.44951104222384, -6.072879475895629", "gob": "no", "score": "4.6", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
-	],
-	"CD": [],
-	"AM": [],
-	"AD": []
-}

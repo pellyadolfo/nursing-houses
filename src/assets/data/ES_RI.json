@@ -1,9 +1,0 @@
-{ 
-	"coords" : {"lat": 43.229919094141, "lng": -5.881542101015995, "zoom": 13},
-	"RES" : [
-		{"id": "RI000", "avail": true, "name": "Residencia Sierra del Aramo", "num": "25", "price": "1600", "address":"Plaza de la Constitución, 2. La Vega. 33160 Riosa", "web": "https://residenciasierradelaramo.com/", "coords": "43.229919094141, -5.881542101015995", "gob": "no", "score": "0", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} }
-	],
-	"CD": [],
-	"AM": [],
-	"AD": []
-}

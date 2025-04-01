@@ -26,6 +26,24 @@
     width: 100%;
   }
 
+	.card:after{
+		content: "built in public";
+		position: fixed;
+		width: 140px;
+		height: 25px;
+		background: #EE8E4A;
+		bottom: 30px;
+		left: -30px;
+		text-align: center;
+		font-size: 13px;
+		font-family: sans-serif;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #fff;
+		line-height: 27px;
+		transform:rotate(45deg);
+	}
+
 </style>
 
 <p-splitter [panelSizes]="[60, 40]" [minSizes]="[20, 40]" class="content" > 

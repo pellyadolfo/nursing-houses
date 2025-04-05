@@ -48,6 +48,7 @@
 		{"id": "CS001", "avail": true, "name": "Geriátrico Argüelles", "num": "18", "price": "", "address":"El Bolao 127, 33457 Naveces. Castrillón", "web": "", "coords": "43.56418315386626, -6.009456560521278", "gob": "no", "score": "4.7", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
 
 		{"id": "CU000", "avail": true, "name": "Residencia Casa del Mar de Cudillero", "num": "108", "price": "", "address":"C. del Gral. Garcia de la Concha, 6, 33150 Cudillero, Asturias", "web": "", "coords": "43.5610988426398, -6.148004582689525", "gob": "yes", "score": "0", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "CU000", "avail": true, "name": "Residencia San Martín de Luiña", "num": "12", "price": "", "address":"La Escalada s/n, 33155 Cudillero (Asturias)", "web": "", "coords": "43.5450168270235, -6.223899687507665", "gob": "yes", "score": "0", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
 
 		{"id": "EF000", "avail": true, "name": "Residencia Geriátrica Vega de Lleira", "num": "24", "price": "", "address":"Arancedo s/n, El Franco - Asturias, 33756 El Franco", "web": "", "coords": "43.502932846735085, -6.833525358544878", "gob": "yes", "score": "4.7", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
 
@@ -235,7 +236,8 @@
 
 		{"id": "SA000", "avail": true, "name": "Hotel Geriátrico Royal", "num": "25", "price": "1650", "address":"Vega de Sariego. 33518 Sariego", "web": "https://www.hotelgeriatricoroyal.es/", "coords": "43.409502600119026, -5.560318304700052", "gob": "no", "score": "3.3", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
 
-		{"id": "SB000", "avail": true, "name": "Residencia San Telmo", "num": "54", "price": "", "address":"Calle Marqués de Argudín 46, 33125 Soto del Barco (Asturias)", "web": "", "coords": "43.55977741219894, -6.0718349066613895", "gob": "no", "score": "3.8", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "SB000", "avail": true, "name": "Residencia San Telmo", "num": "54", "price": "", "address":"Calle Marqués de Argudín 46, 33125 Soto del Barco (Asturias)", "web": "https://geriatricosasturias.es/residencia-san-telmo/", "coords": "43.55977741219894, -6.0718349066613895", "gob": "no", "score": "3.8", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "SB000", "avail": true, "name": "Residencia San Juan", "num": "24", "price": "", "address":"Avenida de los Quebrantos 10, San Juan de la Arena-33125", "web": "https://geriatricosasturias.es/residencia-san-juan-41/", "coords": "43.5587853366337, -6.07535863844607", "gob": "no", "score": "0", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
 
 		{"id": "SI000", "avail": true, "name": "Residencia Ntra. Sra. del Amparo", "num": "158", "price": "", "address":"C. Terrerón, 33936 Tuilla, Asturias", "web": "https://www.residenciatuilla.com/", "coords": "43.33598305711729, -5.638439295080745", "gob": "no", "score": "4.1", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
 		{"id": "SI000", "avail": true, "name": "Residencia Ave María", "num": "149", "price": "", "address":"La Barganiza s/n, 33429 Siero (Asturias)", "web": "http://www.residenciaavemaria.com/", "coords": "43.42577432051252, -5.757622916386492", "gob": "no", "score": "3.8", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },

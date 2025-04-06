@@ -1,5 +1,5 @@
 { 
-	"coords" : {"lat": 43.40968965757524, "lng": -5.560350486505404, "zoom": 9},
+	"coords" : {"lat": 43.40968965757524, "lng": -5.560350486505404, "zoom": 8},
 	"RES" : [
 		{"id": "AL001", "avail": true, "name": "Residencia Spa de Felechosa-Montepío", "num": "246", "price": "", "address":"Carretera General, 2. Felechosa. 33688 Aller", "web": "https://residenciaspafelechosa.com/", "coords": "43.1017859418444, -5.497817402867481", "gob": "no", "score": "4.1", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
 		{"id": "AL001", "avail": true, "name": "CPR Sotiello Moreda", "num": "90", "price": "", "address":"33670, Asturias, Spain", "web": "", "coords": "43.17366580478186, -5.745957502471233", "gob": "no", "score": "3.6", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
@@ -267,7 +267,7 @@
 
 		{"id": "SO000", "avail": true, "name": "Residencia Geriátrica San Luis", "num": "25", "price": "", "address":"Rioseco, 206. 33993 Sobrescobio", "web": "", "coords": "43.220053846101194, -5.449468574027199", "gob": "no", "score": "3.7", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
 
-		{"id": "TC000", "avail": true, "name": "CPR Taramundi", "num": "20", "price": "", "address":"Avda. de la Galicia 7, 33775 Taramundi (Asturias)", "web": "", "coords": "43.36004562200126, -7.109498036685214", "gob": "no", "score": "0", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
+		{"id": "TC000", "avail": true, "name": "CPR Taramundi", "num": "20", "price": "", "address":"Avda. de la Galicia 7, 33775 Taramundi (Asturias)", "web": "https://www.facebook.com/people/Centro-Polivalente-de-Recursos-de-Taramundi/100063527314296/", "coords": "43.36004562200126, -7.109498036685214", "gob": "no", "score": "0", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
 
 		{"id": "TC000", "avail": true, "name": "Residencia Villamil – Serantes", "num": "25", "price": "", "address":"33749 Villamil, Asturias", "web": "https://mensajerosdelapazasturiasycantabria.org/villamil", "coords": "43.550868081532414, -6.9781274384303895", "gob": "no", "score": "4.3", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
 

@@ -26,26 +26,32 @@
     width: 100%;
   }
 
-	/*.card:after{
-		content: "built in public";
-		position: relative;
-		width: 140px;
-		height: 25px;
-		background: #EE8E4A;
-		bottom: 30px;
-		left: -30px;
-		text-align: center;
-		font-size: 13px;
-		font-family: sans-serif;
-		text-transform: uppercase;
+	/* HTML: <div class="ribbon">Your text content</div> */
+	.ribbon {
+		font-size: 12px;
 		font-weight: bold;
 		color: #fff;
-		line-height: 27px;
-		transform:rotate(-45deg);
-	}*/
+	}
+	.ribbon {
+		--f: .5em; /* control the folded part */
+		
+		position: absolute;
+		top: 0;
+		right: 0;
+		line-height: 1.8;
+		padding-inline: 50h;
+		padding-bottom: var(--f);
+		border-image: conic-gradient(#0008 0 0) 51%/var(--f);
+		clip-path: polygon(100% calc(100% - var(--f)),100% 100%,calc(100% - var(--f)) calc(100% - var(--f)),var(--f) calc(100% - var(--f)), 0 100%,0 calc(100% - var(--f)),999px calc(100% - var(--f) - 999px),calc(100% - 999px) calc(100% - var(--f) - 999px));
+		transform: translate(calc((1 - cos(45deg))*100%), -100%) rotate(45deg);
+		transform-origin: 0% 100%;
+		/*background-color: #BD1550; /* the main color  */
+		z-index: 999;
+	}
 
 </style>
 
+<!-- https://asociacionargas.es/asociados-3/-->
 <p-splitter [panelSizes]="[60, 40]" [minSizes]="[20, 40]" class="content" > 
 
 	<ng-template pTemplate>
@@ -63,6 +69,7 @@
 					<div class="col-12 col-sm-6 col-md-4" *ngFor="let merchant of merchants">
 						<div class="card h-100 card-score_{{ merchant.score > 4.4 ? 5 : merchant.score > 3.9 ? 4 : merchant.score > 3.6 ? 3 :  merchant.score > 3 ? 2 : merchant.score > 0 ? 1 : 99 }}" (mouseover)='overListItem()' (mouseout)='outListItem()' id="RES_{{merchant.id}}">
 
+							<div class="ribbon card-score_{{ merchant.score > 4.4 ? 5 : merchant.score > 3.9 ? 4 : merchant.score > 3.6 ? 3 :  merchant.score > 3 ? 2 : merchant.score > 0 ? 1 : 99 }}">Your text content</div>
 							<div id="carouselPhotos" class="carousel carousel-dark slide">
 								<div class="carousel-indicators">
 									<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -111,11 +118,10 @@
 							<div class="row m-1 pb-3">
 								<div class="col"><app-svg-icon class="card-cell ranking_" [path]="'assets/icon/ico-wheelchair.svg'"></app-svg-icon></div>
 								<div class="col"><app-svg-icon class="card-cell ranking_" [path]="'assets/icon/ico-dementia.svg'"></app-svg-icon></div>
-								<div class="col"><app-svg-icon *ngIf="!merchant.avail" class="card-cell red" [path]="'assets/icon/ico-availno.svg'"></app-svg-icon></div>
 								<div class="col"><app-svg-icon class="card-cell ranking_" [path]="'assets/icon/ico-brain.svg'"></app-svg-icon></div>
 								<div class="col"><app-svg-icon class="card-cell ranking_{{merchant.LE.GA}}" [path]="'assets/icon/ico-garden.svg'" title="Jardin: {{merchant.LE.GA}}"></app-svg-icon></div>
 								<div class="col"><app-svg-icon class="card-cell ranking_{{merchant.LE.GY}}" [path]="'assets/icon/ico-gym.svg'" title="Gym: {{merchant.LE.GY}}"></app-svg-icon></div>
-								<!--div class="col"><app-svg-icon class="card-cell ranking_" [path]="'assets/icon/ico-social.svg'"></app-svg-icon></div-->
+								<div class="col"><app-svg-icon class="card-cell ranking_" [path]="'assets/icon/ico-social.svg'"></app-svg-icon></div>
 							</div>
 						</div>
 					</div>

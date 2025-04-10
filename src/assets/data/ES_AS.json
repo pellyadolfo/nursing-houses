@@ -25,6 +25,7 @@
 
 		{"id": "CB000", "name": "Residencia La Ventana del Urriellu", "num": "21", "price": "", "address":"Barrio Caiceda Barrio El Escobiu, 33554 Póo de Cabrales, Asturias", "web": "", "coords": "43.30878075551325, -4.8350436875179135", "gob": "no", "score": "0", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
 
+		{"id": "CL000", "name": "Residencia Ciudad Dorada", "num": "1056", "price": "", "address":"Carr. a Huerres, 0 S/N, 33320 Colunga, Asturias", "web": "https://www.facebook.com/people/Residencia-Ciudad-Dorada-Colunga/61562855619057/?_rdr", "coords": "43.48641653881339, -5.2618389007125375", "gob": "no", "score": "4.3", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
 		{"id": "CL000", "name": "CPR Lastres. Residencia geriátrica", "num": "15", "price": "", "address":"C. Sta. María de Sábada, 30, 33330 Lastres, Asturias", "web": "", "coords": "43.51580181489332, -5.273687700260519", "gob": "no", "score": "4.2", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },
 
 		{"id": "CN000", "name": "Hogar Residencia San José", "num": "110", "price": "", "address":"C. Félix María Villa, 11, 33800 Cangas del Narcea, Asturias", "web": "https://x.com/SanJoseCangas", "coords": "43.1811706861256, -6.551327716358622", "gob": "no", "score": "5", "LE" : {"GY": 0, "GM" : 0, "PO": 0, "GA": 0, "GH": 0} },

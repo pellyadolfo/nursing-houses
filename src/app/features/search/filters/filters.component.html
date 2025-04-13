@@ -5,38 +5,62 @@
 	<div class="row g-3">
 		<div class="col-2">
 			<div class="card text-center border-0">
-				<app-svg-icon class="card-cell ranking_0" [path]="'../assets/icon/ico-health-wheelchair.svg'"></app-svg-icon>
-				<span class="fs-6 d-none d-md-block">Single</span>
+				<p-togglebutton [(ngModel)]="healthWheelchair" size="large" styleClass="w-36">
+					<ng-template #content>
+						<img src="../assets/icon/ico-health-wheelchair.svg" class="card-cell">
+					</ng-template>
+				</p-togglebutton>
+				<h6 class="fs-6 d-none d-md-block">Movilidad</h6>
 			</div>
 		</div>
 		<div class="col-2">
 			<div class="card text-center border-0">
-				<app-svg-icon class="card-cell ranking_0" [path]="'../assets/icon/ico-health-dementia.svg'"></app-svg-icon>
-				<h6 class="fs-6 d-none d-md-block">Gym</h6>
+				<p-togglebutton [(ngModel)]="healthDementia" size="large" styleClass="w-36">
+					<ng-template #content>
+						<img src="../assets/icon/ico-health-dementia.svg" class="card-cell">
+					</ng-template>
+				</p-togglebutton>
+				<h6 class="fs-6 d-none d-md-block">Demencia</h6>
 			</div>
 		</div>
 		<div class="col-2">
 			<div class="card text-center border-0">
-				<app-svg-icon class="card-cell ranking_0" [path]="'../assets/icon/ico-leisure-brain.svg'"></app-svg-icon>
-				<h6 class="fs-6 d-none d-md-block">Park</h6>
+				<p-togglebutton [(ngModel)]="leisureBrain" size="large" styleClass="w-36">
+					<ng-template #content>
+						<img src="../assets/icon/ico-leisure-brain.svg" class="card-cell">
+					</ng-template>
+				</p-togglebutton>
+				<h6 class="fs-6 d-none d-md-block">Intelectual</h6>
 			</div>
 		</div>
 		<div class="col-2">
 			<div class="card text-center border-0">
-				<app-svg-icon class="card-cell ranking_0" [path]="'../assets/icon/ico-leisure-garden.svg'"></app-svg-icon>
-				<h6 class="fs-6 d-none d-md-block">Pool</h6>
+				<p-togglebutton [(ngModel)]="leisureGarden" size="large" styleClass="w-36">
+					<ng-template #content>
+						<img src="../assets/icon/ico-leisure-garden.svg" class="card-cell">
+					</ng-template>
+				</p-togglebutton>
+				<h6 class="fs-6 d-none d-md-block">Naturaleza</h6>
 			</div>
 		</div>
 		<div class="col-2">
 			<div class="card text-center border-0">
-				<app-svg-icon class="card-cell ranking_0" [path]="'../assets/icon/ico-leisure-gym.svg'"></app-svg-icon>
-				<h6 class="fs-6 d-none d-md-block">Card title</h6>
+				<p-togglebutton [(ngModel)]="leisureGym" size="large" styleClass="w-36">
+					<ng-template #content>
+						<img src="../assets/icon/ico-leisure-gym.svg" class="card-cell">
+					</ng-template>
+				</p-togglebutton>
+				<h6 class="fs-6 d-none d-md-block">Ejercicio</h6>
 			</div>
 		</div>
 		<div class="col-2">
 			<div class="card text-center border-0">
-				<app-svg-icon class="card-cell ranking_0" [path]="'../assets/icon/ico-leisure-shops.svg'"></app-svg-icon>
-				<h6 class="fs-6 d-none d-md-block">Card title</h6>
+				<p-togglebutton [(ngModel)]="leisureShops" size="large" styleClass="w-36">
+					<ng-template #content>
+						<img src="../assets/icon/ico-leisure-shops.svg" class="card-cell">
+					</ng-template>
+				</p-togglebutton>
+				<h6 class="fs-6 d-none d-md-block">Ciudad</h6>
 			</div>
 		</div>
 	</div>

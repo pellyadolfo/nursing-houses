@@ -1,5 +1,12 @@
 .card-cell {
 	display: block;
 	height: 32px;
-	width: 100%;
+}
+
+@media (max-width: 1250px) {
+	.card-cell {
+		display: block;
+		height: 12px;
+	}
+	
 }

@@ -16,7 +16,7 @@ export class AppComponent {
 
 	menuItems: MenuItem[] = [];
 
-	ngOnInit() { 
+	ngOnInit() {
     this.menuItems = [ 
       { 
         label: 'HTML', 
@@ -40,6 +40,16 @@ export class AppComponent {
           } 
         ] 
       } 
-    ]; 
+    ];
+
+    // Add a small delay to ensure everything is rendered
+    setTimeout(() => {
+      const loader = document.getElementById('initial-loader');
+      if (loader) {
+        loader.classList.add('hide');
+        // Optional: remove from DOM after fade out
+        setTimeout(() => loader.remove(), 300);
+      }
+    }, 100);
   } 
 }
